@@ -1,6 +1,6 @@
-baseURL = "https://miphphuong-eng.github.io/NguyenMinhPhuong_Workshop/"
+baseURL = "https://miphphuong-eng.github.io/NguyenMinhPhuong_Workshop"
 relativeURLs = true
-canonifyURLs = true
+canonifyURLs = false
 defaultContentLanguage = "en"
 
 # Change the default theme to be use when building the site with Hugo
