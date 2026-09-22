@@ -2,7 +2,7 @@
 
 ## 1. Week 1 Objectives
 
-* Introduction to the First Cloud Journey (FCAJ) program.
+* Introduction  to the First Cloud Journey (FCAJ) program.
 * Understand FCAJ regulations, requirements, and learning roadmap.
 * Learn the basic concepts of Cloud Computing and Amazon Web Services (AWS).
 * Understand the major AWS service groups:
