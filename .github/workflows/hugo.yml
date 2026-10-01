@@ -23,7 +23,10 @@ jobs:
           extended: true
 
       - name: Build website
-        run: hugo --theme hugo-theme-learn --minify
+        run: |
+          hugo --theme hugo-theme-learn --minify
+          mkdir -p public/css
+          cp -r themes/hugo-theme-learn/static/css/* public/css/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
