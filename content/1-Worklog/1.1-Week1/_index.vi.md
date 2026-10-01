@@ -117,6 +117,5 @@ Các kết quả học tập chính bao gồm:
 * Thực hành với Amazon Bedrock và Foundation Models.
 * Cấu hình AWS Budgets để theo dõi chi phí.
 * Tạo serverless web application bằng AWS Lambda.
-* Tạo và quản lý relational database bằng Amazon RDS.
 * Hiểu về giám sát tài nguyên AWS, dọn dẹp tài nguyên và tối ưu hóa chi phí.
 * Xây dựng nền tảng để tiếp tục học thêm các dịch vụ AWS và tham gia các dự án nhóm trong tương lai.
