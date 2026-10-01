@@ -5,8 +5,8 @@ title = "Internship Report"
 theme = "hugo-theme-learn"
 
 # Quan trọng: Đảm bảo đường dẫn file CSS/JS luôn đúng
-relativeURLs = false
-canonifyURLs = true
+relativeURLs = true
+canonifyURLs = false
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
