@@ -1,10 +1,12 @@
 baseURL = 'https://miphphuong-eng.github.io/NguyenMinhPhuong_Workshop/'
-relativeURLs = true
-canonifyURLs = false
+languageCode = 'en-us'
 defaultContentLanguage = 'en'
-defaultContentLanguageInSubdir = false
 title = "Internship Report"
 theme = "hugo-theme-learn"
+
+# Quan trọng: Đảm bảo đường dẫn file CSS/JS luôn đúng
+relativeURLs = false
+canonifyURLs = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -20,7 +22,7 @@ theme = "hugo-theme-learn"
     languageName = "Tiếng Việt"
 
 [params]
-  themeVariant = "workshop"
+  themeVariant = "blue"
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
