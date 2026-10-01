@@ -1,18 +1,26 @@
 baseURL = 'https://miphphuong-eng.github.io/NguyenMinhPhuong_Workshop/'
 relativeURLs = true
 canonifyURLs = false
-languageCode = 'en-us'
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
 title = "Internship Report"
 theme = "hugo-theme-learn"
 
 [outputs]
-home = [ "HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON"]
+
+[languages]
+  [languages.en]
+    title = "Worklog & Workshop"
+    weight = 1
+    languageName = "English"
+  [languages.vi]
+    title = "Nhật ký thực tập"
+    weight = 2
+    languageName = "Tiếng Việt"
 
 [params]
   themeVariant = "workshop"
-  editURL = ""
-  description = ""
-  author = "miphphuong"
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
