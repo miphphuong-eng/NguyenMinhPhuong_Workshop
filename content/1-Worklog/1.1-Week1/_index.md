@@ -111,6 +111,5 @@ The main learning outcomes include:
 * Practicing with Amazon Bedrock and Foundation Models.
 * Configuring AWS Budgets for cost monitoring.
 * Creating a serverless web application using AWS Lambda.
-* Creating and managing a relational database using Amazon RDS.
 * Understanding AWS resource monitoring, cleanup, and cost optimization.
 * Preparing a foundation for learning additional AWS services and participating in future team projects.
