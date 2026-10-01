@@ -1,8 +1,8 @@
 baseURL = 'https://miphphuong-eng.github.io/NguyenMinhPhuong_Workshop/'
 relativeURLs = true
 canonifyURLs = false
-defaultContentLanguage = "en"
-
+languageCode = 'en-us'
+title = "Internship Report"
 theme = "hugo-theme-learn"
 
 [outputs]
