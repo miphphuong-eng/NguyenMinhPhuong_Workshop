@@ -23,7 +23,12 @@ jobs:
           extended: true
 
       - name: Build website
-        run: hugo --theme hugo-theme-learn --minify --baseURL "https://miphphuong-eng.github.io/NguyenMinhPhuong_Workshop/"
+        run: |
+          hugo --theme hugo-theme-learn --minify --baseURL "https://miphphuong-eng.github.io/NguyenMinhPhuong_Workshop/"
+          # Đảm bảo copy đầy đủ CSS/JS từ theme vào thư mục public đã build
+          if [ -d "themes/hugo-theme-learn/static" ]; then
+            cp -r themes/hugo-theme-learn/static/* public/
+          fi
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
