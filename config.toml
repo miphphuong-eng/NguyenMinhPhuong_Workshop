@@ -1,33 +1,41 @@
 baseURL = 'https://miphphuong-eng.github.io/NguyenMinhPhuong_Workshop/'
-languageCode = 'en-us'
-defaultContentLanguage = 'en'
-title = "Internship Report"
-theme = "hugo-theme-learn"
+languageCode = 'vi'
+title = 'Nguyen Minh Phuong - Internship Workshop'
+theme = 'hugo-theme-learn'
 
-# Quan trọng: Đảm bảo đường dẫn file CSS/JS luôn đúng
+# Các cấu hình bắt buộc để tránh lỗi đường dẫn CSS/JS trên GitHub Pages
 relativeURLs = true
 canonifyURLs = false
+uglyURLs = false
 
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
+# Cấu hình ngôn ngữ mặc định và đa ngôn ngữ (Multilingual)
+defaultContentLanguage = 'vi'
+defaultContentLanguageInSubdir = false
 
 [languages]
-  [languages.en]
-    title = "Worklog & Workshop"
-    weight = 1
-    languageName = "English"
   [languages.vi]
-    title = "Nhật ký thực tập"
+    title = 'Nhật ký Thực tập'
+    weight = 1
+    languageName = 'Tiếng Việt'
+
+  [languages.en]
+    title = 'Worklog'
     weight = 2
-    languageName = "Tiếng Việt"
+    languageName = 'English'
 
+# Cấu hình tham số giao diện Learn (Sidebar, Search, Toc...)
 [params]
-  themeVariant = "blue"
+  themeVariant = 'blue' # Các màu hỗ trợ: blue, green, red, grey, orange
+  editURL = ''
   showVisitedLinks = true
-  disableBreadcrumb = false
-  disableNextPrev = false
+  disableSearch = false
+  disableHeaderMenu = false
+  disableShortcutsTitle = false
+  disableLanguageSwitchingButton = false
+  clearReadingHistory = false
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+# Thanh Menu phụ / Shortlinks bên trái sidebar
+[[menu.shortcuts]]
+  name = '<i class="fab fa-github"></i> GitHub Repo'
+  url = 'https://github.com/miphphuong-eng/NguyenMinhPhuong_Workshop'
+  weight = 1
