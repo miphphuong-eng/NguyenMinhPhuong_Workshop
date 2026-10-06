@@ -2,6 +2,12 @@ baseURL = "https://miphphuong-eng.github.io/NguyenMinhPhuong_Workshop/"
 languageCode = "en-us"
 title = "Internship Worklog"
 
+theme = "hugo-theme-learn"
+
+relativeURLs = false
+canonifyURLs = false
+uglyURLs = false
+
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
@@ -18,3 +24,8 @@ defaultContentLanguageInSubdir = false
     languageName = "Tiếng Việt"
     languageCode = "vi"
     weight = 2
+
+[params]
+  themeVariant = "blue"
+  showVisitedLinks = true
+  disableSearch = false
