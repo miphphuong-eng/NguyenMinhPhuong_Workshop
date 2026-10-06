@@ -16,8 +16,14 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: recursive
           fetch-depth: 0
+
+      - name: Checkout Learn Theme if missing
+        run: |
+          if [ ! -d "themes/hugo-theme-learn" ] || [ -z "$(ls -A themes/hugo-theme-learn)" ]; then
+            git clone https://github.com/matcornic/hugo-theme-learn.git themes/hugo-theme-learn
+          fi
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
