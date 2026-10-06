@@ -29,3 +29,5 @@ defaultContentLanguageInSubdir = false
   themeVariant = "blue"
   showVisitedLinks = true
   disableSearch = false
+  disableExplicitIndexHeading = true
+  disableBreadcrumb = false
