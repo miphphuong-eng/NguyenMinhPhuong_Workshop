@@ -15,6 +15,9 @@ jobs:
     steps:
       - name: Checkout source code
         uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -23,10 +26,7 @@ jobs:
           extended: true
 
       - name: Build website
-        run: |
-          hugo --theme hugo-theme-learn --minify
-          mkdir -p public/css
-          cp -r themes/hugo-theme-learn/static/css/* public/css/
+        run: hugo --minify
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
