@@ -3,7 +3,6 @@ languageCode = "vi"
 title = "Nguyen Minh Phuong - Internship Workshop"
 theme = "hugo-theme-learn"
 
-# Tắt relativeURLs để Hugo dùng đúng đường dẫn tuyệt đối theo baseURL
 relativeURLs = false
 canonifyURLs = false
 uglyURLs = false
