@@ -11,13 +11,14 @@ defaultContentLanguage = "vi"
 defaultContentLanguageInSubdir = false
 
 [languages]
+
   [languages.vi]
     title = "Nhật ký Thực tập"
     weight = 1
     languageName = "Tiếng Việt"
 
   [languages.en]
-    title = "Worklog"
+    title = "Internship Worklog"
     weight = 2
     languageName = "English"
 
