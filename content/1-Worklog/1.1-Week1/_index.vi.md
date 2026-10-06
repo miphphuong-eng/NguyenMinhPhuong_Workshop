@@ -1,10 +1,8 @@
 ---
-title: "1.1. Nhật ký thực tập Tuần 1"
+title: "NHẬT KÝ THỰC TẬP TUẦN 1"
 weight: 1
 draft: false
 ---
-# NHẬT KÝ THỰC TẬP TUẦN 1
-
 ## 1. Mục tiêu Tuần 1
 
 * Làm quen với chương trình First Cloud Journey (FCAJ).
