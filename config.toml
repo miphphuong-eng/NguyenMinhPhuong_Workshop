@@ -11,6 +11,12 @@ uglyURLs = false
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
+[params]
+  themeVariant = "blue"
+  showVisitedLinks = true
+  disableSearch = false
+  disableExplicitIndexHeading = true
+
 [languages]
 
   [languages.en]
@@ -18,16 +24,13 @@ defaultContentLanguageInSubdir = false
     languageName = "English"
     languageCode = "en"
     weight = 1
+    [languages.en.params]
+      themeVariant = "blue"
 
   [languages.vi]
     title = "Nhật ký Thực tập"
     languageName = "Tiếng Việt"
     languageCode = "vi"
     weight = 2
-
-[params]
-  themeVariant = "blue"
-  showVisitedLinks = true
-  disableSearch = false
-  disableExplicitIndexHeading = true
-  disableBreadcrumb = false
+    [languages.vi.params]
+      themeVariant = "blue"
