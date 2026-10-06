@@ -3,8 +3,6 @@ title: "# WEEK 1 INTERNSHIP WORKLOG"
 weight: 1
 draft: false
 ---
-
-
 ## 1. Week 1 Objectives
 
 * Introduction to the First Cloud Journey (FCAJ) program.
