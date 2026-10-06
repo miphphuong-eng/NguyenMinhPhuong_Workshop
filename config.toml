@@ -1,12 +1,3 @@
-baseURL = "https://miphphuong-eng.github.io/NguyenMinhPhuong_Workshop/"
-languageCode = "vi"
-title = "Nguyen Minh Phuong - Internship Workshop"
-theme = "hugo-theme-learn"
-
-relativeURLs = false
-canonifyURLs = false
-uglyURLs = false
-
 defaultContentLanguage = "vi"
 defaultContentLanguageInSubdir = false
 
@@ -23,8 +14,3 @@ defaultContentLanguageInSubdir = false
     languageName = "English"
     languageCode = "en"
     weight = 2
-
-[params]
-  themeVariant = "blue"
-  showVisitedLinks = true
-  disableSearch = false
