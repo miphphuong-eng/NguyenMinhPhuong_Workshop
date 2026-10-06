@@ -1,16 +1,20 @@
-defaultContentLanguage = "vi"
+baseURL = "https://miphphuong-eng.github.io/NguyenMinhPhuong_Workshop/"
+languageCode = "en-us"
+title = "Internship Worklog"
+
+defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
 [languages]
-
-  [languages.vi]
-    title = "Nhật ký Thực tập"
-    languageName = "Tiếng Việt"
-    languageCode = "vi"
-    weight = 1
 
   [languages.en]
     title = "Internship Worklog"
     languageName = "English"
     languageCode = "en"
+    weight = 1
+
+  [languages.vi]
+    title = "Nhật ký Thực tập"
+    languageName = "Tiếng Việt"
+    languageCode = "vi"
     weight = 2
