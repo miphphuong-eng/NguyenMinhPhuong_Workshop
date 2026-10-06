@@ -1,28 +1,28 @@
-baseURL = 'https://miphphuong-eng.github.io/NguyenMinhPhuong_Workshop/'
-languageCode = 'vi'
-title = 'Nguyen Minh Phuong - Internship Workshop'
-theme = 'hugo-theme-learn'
+baseURL = "https://miphphuong-eng.github.io/NguyenMinhPhuong_Workshop/"
+languageCode = "vi"
+title = "Nguyen Minh Phuong - Internship Workshop"
+theme = "hugo-theme-learn"
 
-# Ép Hugo tự động nối đúng đường dẫn CSS/JS trên GitHub Pages
-relativeURLs = true
+# Tắt relativeURLs để Hugo dùng đúng đường dẫn tuyệt đối theo baseURL
+relativeURLs = false
 canonifyURLs = false
 uglyURLs = false
 
-defaultContentLanguage = 'vi'
+defaultContentLanguage = "vi"
 defaultContentLanguageInSubdir = false
 
 [languages]
   [languages.vi]
-    title = 'Nhật ký Thực tập'
+    title = "Nhật ký Thực tập"
     weight = 1
-    languageName = 'Tiếng Việt'
+    languageName = "Tiếng Việt"
 
   [languages.en]
-    title = 'Worklog'
+    title = "Worklog"
     weight = 2
-    languageName = 'English'
+    languageName = "English"
 
 [params]
-  themeVariant = 'blue'
+  themeVariant = "blue"
   showVisitedLinks = true
   disableSearch = false
