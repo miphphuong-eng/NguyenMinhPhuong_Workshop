@@ -14,13 +14,15 @@ defaultContentLanguageInSubdir = false
 
   [languages.vi]
     title = "Nhật ký Thực tập"
-    weight = 1
     languageName = "Tiếng Việt"
+    languageCode = "vi"
+    weight = 1
 
   [languages.en]
     title = "Internship Worklog"
-    weight = 2
     languageName = "English"
+    languageCode = "en"
+    weight = 2
 
 [params]
   themeVariant = "blue"
