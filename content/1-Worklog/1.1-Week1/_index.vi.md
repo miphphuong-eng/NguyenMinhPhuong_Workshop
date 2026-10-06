@@ -1,12 +1,10 @@
 ---
-title: "Nhật ký thực tập Tuần 1"
+title: "1.1. Week 1 Worklog"
 weight: 1
 draft: false
 ---
 
-# NHẬT KÝ THỰC TẬP TUẦN 1
-
-## Mục tiêu Tuần 1:
+## Mục tiêu Tuần 1
 
 * Giao lưu và làm quen với các thành viên trong chương trình First Cloud AI Journey (FCAJ).
 * Hiểu rõ các quy định, yêu cầu và lộ trình học tập của FCAJ.
@@ -31,7 +29,7 @@ draft: false
 
 ---
 
-## Các công việc thực hiện trong tuần:
+## Các công việc thực hiện trong tuần
 
 | Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 |:---:|------|:----------:|:---------------:|--------------------|
@@ -50,7 +48,7 @@ draft: false
 
 ---
 
-## Kết quả đạt được trong Tuần 1:
+## Kết quả đạt được trong Tuần 1
 
 * Nắm vững kiến thức nền tảng về **Điện toán đám mây** và các nhóm dịch vụ AWS chính:
   * Compute (Điện toán)
@@ -91,7 +89,7 @@ draft: false
 
 ---
 
-## Kết quả học tập tổng thể:
+## Kết quả học tập tổng thể
 
 Thông qua các hoạt động hoàn thành trong Tuần 1, tôi đã xây dựng được nền tảng vững chắc về **Điện toán đám mây AWS**, kết hợp giữa lý thuyết và kinh nghiệm thực hành thực tế.
 
