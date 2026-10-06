@@ -1,25 +1,23 @@
 ---
-title: "Week 1 Worklog"
+title: "1.1. Week 1 Worklog"
 weight: 1
 draft: false
 ---
 
-# WEEK 1 WORKLOG
+## Week 1 Objectives
 
-## Week 1 Objectives:
-
-* Connect and get acquainted with members of First Cloud AI Journey (FCAJ).
-* Understand the rules, requirements, and roadmap of FCAJ.
-* Learn fundamental concepts of Cloud Computing and Amazon Web Services (AWS).
+* Connect and get acquainted with members of the First Cloud AI Journey (FCAJ) program.
+* Understand the rules, requirements, and learning roadmap of FCAJ.
+* Master the fundamental concepts of Cloud Computing and Amazon Web Services (AWS).
 * Explore core AWS service groups:
   * Compute
   * Storage
   * Networking
   * Database
 * Create and secure an AWS account, and learn about AWS Free Tier policies.
-* Learn to use AWS Management Console and AWS Command Line Interface (CLI).
+* Learn to use the AWS Management Console and AWS Command Line Interface (CLI).
 * Understand Amazon EC2 concepts and practice basic EC2 hands-on labs.
-* Learn about the AWS Free Tier 2025 program and **$200 AWS Credit**.
+* Learn about the AWS Free Tier 2025 program and the **$200 AWS Credit**.
 * Practice hands-on exercises with key AWS services, including:
   * Amazon EC2
   * Amazon Bedrock
@@ -31,7 +29,7 @@ draft: false
 
 ---
 
-## Tasks to be carried out this week:
+## Tasks to be carried out this week
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 |:---:|------|:----------:|:---------------:|--------------------|
@@ -50,7 +48,7 @@ draft: false
 
 ---
 
-## Week 1 Achievements:
+## Week 1 Achievements
 
 * Gained foundational knowledge of **Cloud Computing** and core AWS service categories:
   * Compute
@@ -91,7 +89,7 @@ draft: false
 
 ---
 
-## Overall Learning Outcomes:
+## Overall Learning Outcomes
 
 Through the activities completed in Week 1, I built a solid foundation in **AWS Cloud Computing**, combining theoretical knowledge with practical hands-on experience.
 
