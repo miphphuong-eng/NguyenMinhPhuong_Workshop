@@ -1,9 +1,9 @@
 ---
-title: "1.1. Week 1 Worklog"
+title: "# WEEK 1 INTERNSHIP WORKLOG"
 weight: 1
 draft: false
 ---
-# WEEK 1 INTERNSHIP WORKLOG
+
 
 ## 1. Week 1 Objectives
 
