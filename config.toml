@@ -12,7 +12,7 @@ defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
 [params]
-  themeVariant = "mine"
+  themeVariant = "worklog"
   showVisitedLinks = true
   disableSearch = false
   disableExplicitIndexHeading = true
@@ -25,7 +25,7 @@ defaultContentLanguageInSubdir = false
     languageCode = "en"
     weight = 1
     [languages.en.params]
-      themeVariant = "mine"
+      themeVariant = "worklog"
 
   [languages.vi]
     title = "Nhật ký Thực tập"
@@ -33,4 +33,4 @@ defaultContentLanguageInSubdir = false
     languageCode = "vi"
     weight = 2
     [languages.vi.params]
-      themeVariant = "mine"
+      themeVariant = "worklog"
