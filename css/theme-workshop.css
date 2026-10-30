@@ -1,0 +1,238 @@
+
+/* ==========================================
+   THEME WORKSHOP - AWS STYLE
+   Reference: Image 1
+   ========================================== */
+
+/* 1. COLOR VARIABLES */
+:root {
+    /* Main content */
+    --MAIN-TEXT-color: #232f3e;
+    --MAIN-TITLES-TEXT-color: #7B91AD;
+    --MAIN-LINK-color: #167cd8;
+    --MAIN-LINK-HOVER-color: #105ba1;
+    --MAIN-ANCHOR-color: #61819d;
+
+    /* Header */
+    --MENU-HEADER-BG-color: #293F5B;
+    --MENU-HEADER-BORDER-color: #31465f;
+
+    /* Search box */
+    --MENU-SEARCH-BG-color: #19222d;
+    --MENU-SEARCH-BOX-color: #313f52;
+    --MENU-SEARCH-BOX-ICONS-color: #8795a5;
+
+    /* Sidebar */
+    --MENU-SECTIONS-BG-color: #121921;
+    --MENU-SECTIONS-ACTIVE-BG-color: #0b0f14;
+    --MENU-SECTIONS-LINK-color: #d5dbdb;
+    --MENU-SECTIONS-LINK-HOVER-color: #ffffff;
+
+    /* Active menu */
+    --MENU-SECTION-ACTIVE-CATEGORY-color: #777777;
+    --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #ffffff;
+
+    /* Other elements */
+    --MENU-VISITED-color: #e29334;
+    --MENU-SECTION-HR-color: #232f3e;
+}
+
+/* ==========================================
+   2. FONT FAMILY
+   ========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont,
+                 'Segoe UI', sans-serif !important;
+    color: var(--MAIN-TEXT-color) !important;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   3. MAIN CONTENT
+   ========================================== */
+
+#body {
+    background-color: #ffffff !important;
+    color: var(--MAIN-TEXT-color) !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+#body-inner {
+    background-color: #ffffff !important;
+}
+
+/* Main title */
+#body #body-inner h1 {
+    color: var(--MAIN-TITLES-TEXT-color) !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+/* Other headings */
+#body #body-inner h2,
+#body #body-inner h3,
+#body #body-inner h4,
+#body #body-inner h5 {
+    color: var(--MAIN-TITLES-TEXT-color) !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 400 !important;
+}
+
+/* Paragraphs and lists */
+#body p,
+#body li {
+    color: #232f3e;
+    font-family: 'Roboto', sans-serif !important;
+    line-height: 1.6;
+}
+
+/* Bold text */
+#body strong,
+#body b,
+#body th {
+    font-weight: 600 !important;
+    color: #232f3e;
+}
+
+/* Links */
+#body a {
+    color: var(--MAIN-LINK-color);
+}
+
+#body a:hover {
+    color: var(--MAIN-LINK-HOVER-color);
+}
+
+/* Tables */
+#body table th {
+    background-color: #f5f5f5;
+    color: #232f3e;
+}
+
+/* ==========================================
+   4. HEADER - AWS NAVY
+   ========================================== */
+
+#sidebar #header-wrapper {
+    background-color: #293F5B !important;
+    border-bottom: 4px solid #31465f !important;
+}
+
+#sidebar #header {
+    background-color: #293F5B !important;
+}
+
+/* ==========================================
+   5. SEARCH BOX
+   ========================================== */
+
+#sidebar #searchbox {
+    background-color: #19222d !important;
+}
+
+#sidebar #searchbox input {
+    background-color: #313f52 !important;
+    color: #ffffff !important;
+    border: 1px solid #52657b !important;
+}
+
+#sidebar #searchbox input::placeholder {
+    color: #b5c1cf !important;
+}
+
+/* ==========================================
+   6. SIDEBAR
+   ========================================== */
+
+#sidebar {
+    background-color: #121921 !important;
+}
+
+/* Sidebar menu background */
+#sidebar ul.topics,
+#sidebar ul.topics > li,
+#sidebar .highlightable {
+    background-color: #121921 !important;
+}
+
+/* Sidebar links */
+#sidebar ul.topics a {
+    color: #d5dbdb !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500;
+}
+
+/* Hover */
+#sidebar ul.topics a:hover {
+    color: #ffffff !important;
+}
+
+/* Active menu */
+#sidebar ul.topics > li.active > a,
+#sidebar ul.topics li.dd-item.active > a,
+#sidebar ul.topics > li.parent > a {
+    background-color: #ffffff !important;
+    color: #777777 !important;
+    font-weight: 600 !important;
+}
+
+/* Sidebar section separator */
+#sidebar ul.topics li {
+    border-color: #232f3e;
+}
+
+/* ==========================================
+   7. BREADCRUMB
+   ========================================== */
+
+#body .breadcrumb {
+    background-color: #f5f5f5 !important;
+}
+
+#body .breadcrumb a {
+    color: #3984d6 !important;
+}
+
+/* ==========================================
+   8. NAVIGATION ARROWS
+   ========================================== */
+
+#body .nav-prev,
+#body .nav-next,
+#navigation a.nav-prev,
+#navigation a.nav-next {
+    color: #e29334 !important;
+}
+
+#body .nav-prev:hover,
+#body .nav-next:hover,
+#navigation a.nav-prev:hover,
+#navigation a.nav-next:hover {
+    color: #d07d18 !important;
+}
+
+/* ==========================================
+   9. RESPONSIVE
+   ========================================== */
+
+@media screen and (max-width: 768px) {
+    #body #body-inner h1 {
+        font-size: 2rem;
+    }
+
+    #sidebar {
+        background-color: #121921 !important;
+    }
+
+    #sidebar #header-wrapper {
+        background-color: #293F5B !important;
+    }
+}
