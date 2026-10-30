@@ -67,4 +67,31 @@ draft: false
   - Key Pairs
   - Elastic IP
 - Thực hành khởi tạo EC2 instance, kết nối qua **SSH**, quản lý ổ đĩa EBS và xóa tài nguyên sau khi sử dụng.
-- Hiểu rõ chính sách **AWS Free Tier 2025** và cơ chế
+- Hiểu rõ chính sách **AWS Free Tier 2025** và cơ chế **$200 AWS Credit** cho các tài khoản tạo sau ngày 15/07/2025.
+- Phân biệt được hai lựa chọn gói tài khoản:
+  - Free Account Plan
+  - Paid Account Plan
+- Áp dụng thành công AWS Credits vào các bài thực hành thực tế.
+- Hoàn thành bài lab **AWS Free Tier EC2 Task** (từ cấu hình, triển khai, kiểm thử đến dọn dẹp).
+- Khám phá **Amazon Bedrock Playground** và làm việc với các Foundation Models cho các thử nghiệm AI/ML.
+- Thực hành viết prompt và biết cách gửi **AWS Support Case** khi yêu cầu truy cập mô hình (Anthropic Claude) bị giới hạn.
+- Cấu hình **AWS Budgets** thiết lập cảnh báo email để giám sát chi phí tự động.
+- Phát triển ứng dụng **Serverless Web Application** sử dụng **AWS Lambda** và HTTP Blueprint.
+- Khởi tạo và quản lý **Amazon RDS** database sử dụng **Aurora PostgreSQL Compatible**.
+- Rèn luyện thói quen dọn dẹp tài nguyên nghiêm ngặt để tránh phát sinh chi phí ngoài ý muốn.
+- Thành lập nhóm **4 thành viên** sẵn sàng cho các dự án AWS sắp tới.
+
+---
+
+## Kết quả học tập tổng thể
+
+Thông qua các hoạt động hoàn thành trong Tuần 1, tôi đã xây dựng được nền tảng vững chắc về **Điện toán đám mây AWS**, kết hợp giữa lý thuyết và kinh nghiệm thực hành thực tế.
+
+Những kết quả học tập chính bao gồm:
+- Nắm chắc các nguyên lý Điện toán đám mây và hệ sinh thái AWS.
+- Hiểu rõ quy định, yêu cầu và lộ trình phát triển của chương trình FCAJ.
+- Thành thạo thao tác trên AWS Management Console và giao diện AWS CLI.
+- Có khả năng triển khai, kết nối và quản lý tài nguyên Amazon EC2 và EBS.
+- Tối ưu hóa và sử dụng hiệu quả gói AWS Free Tier 2025 cùng khoản $200 Credit.
+- Có kinh nghiệm thực tế với Serverless (Lambda), Cơ sở dữ liệu (RDS), AI/ML (Bedrock) và Quản lý chi phí (Budgets).
+- Thiết lập được quy trình kiểm soát chi phí, thói quen dọn dẹp tài nguyên và kỹ năng làm việc nhóm hiệu quả.
