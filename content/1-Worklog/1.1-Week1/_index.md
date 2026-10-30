@@ -10,20 +10,20 @@ draft: false
 - Understand the rules, requirements, and learning roadmap of FCAJ.
 - Master the fundamental concepts of Cloud Computing and Amazon Web Services (AWS).
 - Explore core AWS service groups:
-  * Compute
-  * Storage
-  * Networking
-  * Database
+  - Compute
+  - Storage
+  - Networking
+  - Database
 - Create and secure an AWS account, and learn about AWS Free Tier policies.
 - Learn to use the AWS Management Console and AWS Command Line Interface (CLI).
 - Understand Amazon EC2 concepts and practice basic EC2 hands-on labs.
 - Learn about the AWS Free Tier 2025 program and the **$200 AWS Credit**.
 - Practice hands-on exercises with key AWS services, including:
-  * Amazon EC2
-  * Amazon Bedrock
-  * AWS Budgets
-  * AWS Lambda
-  * Amazon RDS
+  - Amazon EC2
+  - Amazon Bedrock
+  - AWS Budgets
+  - AWS Lambda
+  - Amazon RDS
 - Learn to monitor AWS resources, control costs, and clean up unused resources.
 - Form study groups and prepare for future AWS projects.
 
@@ -45,32 +45,32 @@ draft: false
 ## Week 1 Achievements
 
 - Gained foundational knowledge of **Cloud Computing** and core AWS service categories:
-  * Compute
-  * Storage
-  * Networking
-  * Database
+  - Compute
+  - Storage
+  - Networking
+  - Database
 - Got acquainted with **First Cloud Journey (FCAJ)**, team members, and internship regulations.
 - Successfully created and secured an AWS account with **Multi-Factor Authentication (MFA)** and billing configurations.
 - Navigated **AWS Management Console** and learned how to locate key services.
 - Installed and configured **AWS CLI** on personal machine.
 - Practiced basic AWS CLI commands:
-  * `aws --version`
-  * `aws configure`
-  * `aws configure list`
-  * `aws sts get-caller-identity`
-  * `aws ec2 describe-regions`
+  - `aws --version`
+  - `aws configure`
+  - `aws configure list`
+  - `aws sts get-caller-identity`
+  - `aws ec2 describe-regions`
 - Mastered core **Amazon EC2** components:
-  * AMI
-  * Instance Types
-  * EBS
-  * Security Groups
-  * Key Pairs
-  * Elastic IP
+  - AMI
+  - Instance Types
+  - EBS
+  - Security Groups
+  - Key Pairs
+  - Elastic IP
 - Launched EC2 instances, connected via **SSH**, managed EBS volumes, and terminated resources.
 - Understood **AWS Free Tier 2025** and the **$200 AWS Credit** mechanism for accounts created after July 15, 2025.
 - Differentiated AWS Free Tier plan options:
-  * Free Account Plan
-  * Paid Account Plan
+  - Free Account Plan
+  - Paid Account Plan
 - Applied AWS Credits through practical hands-on tasks.
 - Completed **AWS Free Tier EC2 Task** (configuration, deployment, testing, and cleanup).
 - Explored **Amazon Bedrock Playground** and worked with Foundation Models for AI/ML testing.
