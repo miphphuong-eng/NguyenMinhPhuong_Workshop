@@ -20,7 +20,7 @@ Typically, and as a standard, a worklog is carried out over about 3 months (thro
 
 **Week 3:** [Compute & Database on AWS (Amazon EC2 & Amazon RDS) (05/10/2026 – 09/10/2026)](1.3-week3/)
 
-**Week 4:** [Doing task C...](1.4-week4/)
+**Week 4:** [Snaptics Project Discussion, Sitemap, Wireframe & AWS Services (12/10/2026 – 16/10/2026)](1.4-week4/)
 
 **Week 5:** [Doing task D...](1.5-week5/)
 
