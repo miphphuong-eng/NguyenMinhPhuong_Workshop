@@ -1,3 +1,4 @@
+
 baseURL = "https://miphphuong-eng.github.io/NguyenMinhPhuong_Workshop/"
 languageCode = "en-us"
 title = "Internship Worklog"
@@ -12,14 +13,11 @@ defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
 [params]
-  # Đổi variant màu sang blue/navy để có sidebar xanh đen đậm
   themeVariant = "blue"
-  # Tắt dấu tích xanh đã xem (như Hình 1)
   showVisitedLinks = false
   disableSearch = false
   disableExplicitIndexHeading = true
-  # Khai báo file CSS tùy chỉnh font chữ
-  customCSS = ["css/custom.css"]
+  custom_css = ["css/theme-workshop.css"]
 
 [languages]
   [languages.en]
@@ -27,13 +25,9 @@ defaultContentLanguageInSubdir = false
     languageName = "English"
     languageCode = "en"
     weight = 1
-    [languages.en.params]
-      themeVariant = "blue"
 
   [languages.vi]
     title = "Nhật ký Thực tập"
     languageName = "Tiếng Việt"
     languageCode = "vi"
     weight = 2
-    [languages.vi.params]
-      themeVariant = "blue"
