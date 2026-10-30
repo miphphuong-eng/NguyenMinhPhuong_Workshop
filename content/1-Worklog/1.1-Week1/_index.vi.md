@@ -78,7 +78,7 @@ draft: false
 - Phát triển ứng dụng **Serverless Web Application** sử dụng **AWS Lambda** và HTTP Blueprint.
 - Khởi tạo và quản lý **Amazon RDS** database sử dụng **Aurora PostgreSQL Compatible**.
 - Rèn luyện thói quen dọn dẹp tài nguyên nghiêm ngặt để tránh phát sinh chi phí ngoài ý muốn.
-- Thành lập nhóm **5 thành viên** sẵn sàng cho các dự án AWS sắp tới.
+- Thành lập nhóm **4 thành viên** sẵn sàng cho các dự án AWS sắp tới.
 
 ---
 
