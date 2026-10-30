@@ -33,12 +33,11 @@ draft: false
 
 | Thứ | Nội dung công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 | :--- | :--- | :---: | :---: | :--- |
-| **Thứ 2** | • Kết nối, làm quen với các thành viên FCAJ.<br>• Đọc và ghi chú nội quy, quy định thực tập. | 21/09/2026 | 21/09/2026 | [FCAJ Regulations]({{< relref "docs/fcj-regulations.md" >}}) |
-| **Thứ 3** | • Tạo & bảo mật tài khoản AWS Free Tier (bật MFA, cài đặt thanh toán).<br>• Làm quen AWS Console, cài đặt và cấu hình AWS CLI. | 22/09/2026 | 22/09/2026 | [AWS Cloud Journey]({{< relref "docs/aws-cloud-journey.md" >}})<br>[AWS Free Tier]({{< relref "docs/aws-free-tier.md" >}})<br>[AWS CLI User Guide]({{< relref "docs/aws-cli-user-guide.md" >}}) |
-| **Thứ 4** | • Tìm hiểu tổng quan Điện toán đám mây & AWS.<br>• Khám phá các nhóm dịch vụ cốt lõi (Compute, Storage, Networking, Database). | 23/09/2026 | 23/09/2026 | [AWS Cloud Journey]({{< relref "docs/aws-cloud-journey.md" >}})<br>[AWS Overview]({{< relref "docs/aws-overview.md" >}}) |
-| **Thứ 5** | • Tìm hiểu khái niệm Amazon EC2 (AMI, EBS, Security Groups, Key Pairs).<br>• Thực hành khởi chạy EC2, kết nối SSH và quản lý EBS. | 24/09/2026 | 24/09/2026 | [AWS Cloud Journey]({{< relref "docs/aws-cloud-journey.md" >}})<br>[Amazon EC2 Guide]({{< relref "docs/amazon-ec2-guide.md" >}})<br>[Amazon EBS User Guide]({{< relref "docs/amazon-ebs-guide.md" >}}) |
-| **Thứ 6** | • Tìm hiểu chương trình AWS Free Tier 2025 & $200 Credit.<br>• Thực hành **Task 1** (EC2 Instance) & **Task 2** (Bedrock Playground). | 25/09/2026 | 25/09/2026 | [AWS Free Tier]({{< relref "docs/aws-free-tier.md" >}})<br>[AWS Free Tier 2025 Guide]({{< relref "docs/aws-free-tier-2025.md" >}})<br>[AWS Free Tier Tasks]({{< relref "docs/aws-free-tier-tasks.md" >}}) |
-| **Thứ 7** | • Thực hành **Task 3** (Budgets), **Task 4** (Lambda App) & **Task 5** (RDS).<br>• Ôn tập tối ưu chi phí, giám sát và dọn dẹp tài nguyên. | 26/09/2026 | 26/09/2026 | [AWS Free Tier Tasks]({{< relref "docs/aws-free-tier-tasks.md" >}})<br>[Monitoring and Cost Optimization]({{< relref "docs/cost-optimization.md" >}}) |
+| **Thứ 2** | • Kết nối, làm quen với các thành viên FCAJ.<br>• Đọc và ghi chú nội quy, quy định thực tập. | 21/09/2026 | 21/09/2026 | [FCAJ Rules](https://hcm-rules.awsfcaj.com/) |
+| **Thứ 3** | • Tạo & bảo mật tài khoản AWS Free Tier (bật MFA, cài đặt thanh toán).<br>• Làm quen AWS Console, cài đặt và cấu hình AWS CLI. | 22/09/2026 | 22/09/2026 | [What is AWS](https://aws.amazon.com/what-is-aws/)<br>[AWS Management Console](https://ap-southeast-2.console.aws.amazon.com/console/home?region=ap-southeast-2#) |
+| **Thứ 4** | • Tìm hiểu tổng quan Điện toán đám mây & AWS.<br>• Khám phá các nhóm dịch vụ cốt lõi (Compute, Storage, Networking, Database). | 23/09/2026 | 23/09/2026 | [AWS IAM Introduction](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html) |
+| **Thứ 5** | • Tìm hiểu khái niệm Amazon EC2 (AMI, EBS, Security Groups, Key Pairs).<br>• Thực hành khởi chạy EC2, kết nối SSH và quản lý EBS.<br>• Thực hành **Task 3** (Budgets), **Task 4** (Lambda App) & **Task 5** (RDS).<br>• Ôn tập tối ưu chi phí, giám sát và dọn dẹp tài nguyên. | 24/09/2026 | 24/09/2026 | [AWS IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) |
+| **Thứ 6** | • Tải và cài đặt công cụ AWS CLI v2 trên máy tính cá nhân.<br>• Khởi tạo profile mặc định qua lệnh `aws configure` (nhập Access Key, Secret Key, Default Region).<br>• Chạy thử nghiệm các câu lệnh CLI kiểm tra xác thực (`aws sts get-caller-identity`, `aws ec2 describe-regions`). | 25/09/2026 | 25/09/2026 | [AWS CLI User Guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) |
 
 ---
 
@@ -79,7 +78,7 @@ draft: false
 - Phát triển ứng dụng **Serverless Web Application** sử dụng **AWS Lambda** và HTTP Blueprint.
 - Khởi tạo và quản lý **Amazon RDS** database sử dụng **Aurora PostgreSQL Compatible**.
 - Rèn luyện thói quen dọn dẹp tài nguyên nghiêm ngặt để tránh phát sinh chi phí ngoài ý muốn.
-- Thành lập nhóm **4 thành viên** sẵn sàng cho các dự án AWS sắp tới.
+- Thành lập nhóm **5 thành viên** sẵn sàng cho các dự án AWS sắp tới.
 
 ---
 
