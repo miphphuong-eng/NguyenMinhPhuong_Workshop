@@ -6,92 +6,80 @@ draft: false
 
 ## Week 1 Objectives
 
-- Connect and get acquainted with members of the First Cloud AI Journey (FCAJ) program.
-- Understand the rules, requirements, and learning roadmap of FCAJ.
-- Master the fundamental concepts of Cloud Computing and Amazon Web Services (AWS).
-- Explore core AWS service groups:
+- Get acquainted with members of the First Cloud AI Journey (FCAJ) program.
+- Understand the regulations, requirements, and 13-week internship roadmap.
+- Gain fundamental knowledge of Cloud Computing and Amazon Web Services (AWS).
+- Explore the core AWS service categories:
   - Compute
   - Storage
   - Networking
   - Database
-- Create and secure an AWS account, and learn about AWS Free Tier policies.
-- Learn to use the AWS Management Console and AWS Command Line Interface (CLI).
-- Understand Amazon EC2 concepts and practice basic EC2 hands-on labs.
-- Learn about the AWS Free Tier 2025 program and the **$200 AWS Credit**.
-- Practice hands-on exercises with key AWS services, including:
+- Create and secure an AWS account and learn about the AWS Free Tier program.
+- Become familiar with AWS Management Console and AWS CLI.
+- Learn Amazon EC2 concepts and practice basic EC2 labs.
+- Explore the AWS Free Tier 2025 program and AWS Credits.
+- Complete practical exercises using the following AWS services:
   - Amazon EC2
   - Amazon Bedrock
   - AWS Budgets
   - AWS Lambda
   - Amazon RDS
-- Learn to monitor AWS resources, control costs, and clean up unused resources.
-- Form study groups and prepare for future AWS projects.
+- Learn how to monitor AWS resources, control costs, and clean up unused resources.
+- Establish a study group and prepare for upcoming AWS projects.
 
 ---
 
-## Tasks to be carried out this week
+## Weekly Activities
 
-| Day | Tasks Summary | Start Date | Completion Date | Reference Material |
-| :--- | :--- | :---: | :---: | :--- |
-| **Monday** | • Connect and get acquainted with FCAJ members.<br>• Read and note down internship regulations. | 21/09/2026 | 21/09/2026 | [FCAJ Regulations]({{< relref "docs/fcj-regulations.md" >}}) |
-| **Tuesday** | • Create & secure AWS Free Tier account (enable MFA, setup billing).<br>• Get familiar with AWS Console, install & configure AWS CLI. | 22/09/2026 | 22/09/2026 | [AWS Cloud Journey]({{< relref "docs/aws-cloud-journey.md" >}})<br>[AWS Free Tier]({{< relref "docs/aws-free-tier.md" >}})<br>[AWS CLI User Guide]({{< relref "docs/aws-cli-user-guide.md" >}}) |
-| **Wednesday** | • Learn Cloud Computing fundamentals and AWS overview.<br>• Explore core AWS service groups (Compute, Storage, Networking, Database). | 23/09/2026 | 23/09/2026 | [AWS Cloud Journey]({{< relref "docs/aws-cloud-journey.md" >}})<br>[AWS Overview]({{< relref "docs/aws-overview.md" >}}) |
-| **Thursday** | • Learn Amazon EC2 concepts (AMI, EBS, Security Groups, Key Pairs).<br>• Hands-on lab: Launch EC2, connect via SSH, and manage EBS. | 24/09/2026 | 24/09/2026 | [AWS Cloud Journey]({{< relref "docs/aws-cloud-journey.md" >}})<br>[Amazon EC2 Guide]({{< relref "docs/amazon-ec2-guide.md" >}})<br>[Amazon EBS User Guide]({{< relref "docs/amazon-ebs-guide.md" >}}) |
-| **Friday** | • Learn AWS Free Tier 2025 program & $200 Credit.<br>• Hands-on **Task 1** (EC2 Instance) & **Task 2** (Bedrock Playground). | 25/09/2026 | 25/09/2026 | [AWS Free Tier]({{< relref "docs/aws-free-tier.md" >}})<br>[AWS Free Tier 2025 Guide]({{< relref "docs/aws-free-tier-2025.md" >}})<br>[AWS Free Tier Tasks]({{< relref "docs/aws-free-tier-tasks.md" >}}) |
-| **Saturday** | • Hands-on **Task 3** (Budgets), **Task 4** (Lambda App) & **Task 5** (RDS).<br>• Review cost optimization, resource monitoring, and cleanup. | 26/09/2026 | 26/09/2026 | [AWS Free Tier Tasks]({{< relref "docs/aws-free-tier-tasks.md" >}})<br>[Monitoring and Cost Optimization]({{< relref "docs/cost-optimization.md" >}}) |
+| Day | Activities | Start Date | End Date | References |
+| :---: | :--- | :---: | :---: | :--- |
+| **Monday** | - Attend the FCJ Workforce orientation and get acquainted with team members.<br>- Learn about internship regulations, working guidelines, and the 13-week internship roadmap.<br>- Study Cloud Computing fundamentals and service models (IaaS, PaaS, SaaS).<br>- Explore AWS global infrastructure: Regions, Availability Zones, and Edge Locations.<br>- Study the AWS Shared Responsibility Model. | 21/09/2026 | 21/09/2026 | [FCAJ Regulations](https://hcm-rules.awsfcaj.com/1-regulations/)<br>[AWS Cloud Overview](https://aws.amazon.com/what-is-aws/)<br>[AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/)<br>[AWS Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/) |
+| **Tuesday** | - Explore core AWS services: EC2, S3, VPC, and RDS.<br>- Create and secure an AWS account, enable MFA, and review billing settings.<br>- Learn AWS IAM concepts, including IAM Users, Groups, Policies, and Roles.<br>- Practice creating an IAM User following the Least Privilege principle.<br>- Install AWS CLI v2 and configure a profile using the `aws configure` command. | 22/09/2026 | 22/09/2026 | [AWS Products](https://aws.amazon.com/products/)<br>[AWS Free Tier](https://aws.amazon.com/free/)<br>[AWS IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)<br>[IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)<br>[AWS CLI User Guide](https://docs.aws.amazon.com/cli/latest/userguide/) |
+| **Wednesday** | - Learn Amazon EC2 components: AMI, Instance Types, EBS, Security Groups, Key Pairs, and Elastic IP.<br>- **AWS Free Tier Task 1:** Launch and configure an EC2 Instance.<br>- Practice connecting to EC2 through SSH and attaching and managing EBS volumes.<br>- Check EC2 instance status and clean up unused resources. | 23/09/2026 | 23/09/2026 | [Amazon EC2 Guide](https://docs.aws.amazon.com/ec2/)<br>[Amazon EBS Guide](https://docs.aws.amazon.com/ebs/)<br>[AWS Free Tier](https://aws.amazon.com/free/) |
+| **Thursday** | - Explore the AWS Free Tier 2025 program, AWS Credits (up to $200 for eligible accounts), and the differences between Free Plan and Paid Plan.<br>- Review the results of **Task 1: Amazon EC2**.<br>- Learn how to monitor AWS Credits, service usage, and billing costs.<br>- **AWS Free Tier Task 2:** Use Amazon Bedrock Playground, explore Foundation Models, and experiment with prompts. | 24/09/2026 | 24/09/2026 | [AWS Free Tier](https://aws.amazon.com/free/)<br>[AWS Billing](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)<br>[Amazon Bedrock Guide](https://docs.aws.amazon.com/bedrock/) |
+| **Friday** | - **AWS Free Tier Task 3:** Create an AWS Budget and configure email cost alerts.<br>- Learn how to monitor budgets and control AWS spending.<br>- **AWS Free Tier Task 4:** Build a web application using AWS Lambda and configure a Function URL.<br>- Practice deploying, testing, and managing a Lambda Function. | 25/09/2026 | 25/09/2026 | [AWS Budgets Guide](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html)<br>[AWS Lambda Guide](https://docs.aws.amazon.com/lambda/) |
+| **Saturday** | - **AWS Free Tier Task 5:** Create an Amazon RDS database and explore Aurora PostgreSQL.<br>- Learn database configuration, connection, and basic RDS operations.<br>- Review the results of all five AWS Free Tier practical tasks (Tasks 1–5).<br>- Check AWS Billing, AWS Credits, and active resources to prevent unexpected charges.<br>- Clean up unused resources and complete the Week 1 Worklog. | 26/09/2026 | 26/09/2026 | [Amazon RDS Guide](https://docs.aws.amazon.com/rds/)<br>[Amazon Aurora Guide](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/)<br>[AWS Cost Management](https://docs.aws.amazon.com/cost-management/) |
 
 ---
 
 ## Week 1 Achievements
 
-- Gained foundational knowledge of **Cloud Computing** and core AWS service categories:
-  - Compute
-  - Storage
-  - Networking
-  - Database
-- Got acquainted with **First Cloud Journey (FCAJ)**, team members, and internship regulations.
-- Successfully created and secured an AWS account with **Multi-Factor Authentication (MFA)** and billing configurations.
-- Navigated **AWS Management Console** and learned how to locate key services.
-- Installed and configured **AWS CLI** on personal machine.
+- Gained fundamental knowledge of Cloud Computing and the main AWS service categories.
+- Became familiar with the FCAJ program, team members, and internship regulations.
+- Created and secured an AWS account using Multi-Factor Authentication (MFA).
+- Became familiar with AWS Management Console and important AWS services.
+- Successfully installed and configured AWS CLI on a personal computer.
 - Practiced basic AWS CLI commands:
   - `aws --version`
   - `aws configure`
   - `aws configure list`
   - `aws sts get-caller-identity`
   - `aws ec2 describe-regions`
-- Mastered core **Amazon EC2** components:
-  - AMI
-  - Instance Types
-  - EBS
-  - Security Groups
-  - Key Pairs
-  - Elastic IP
-- Launched EC2 instances, connected via **SSH**, managed EBS volumes, and terminated resources.
-- Understood **AWS Free Tier 2025** and the **$200 AWS Credit** mechanism for accounts created after July 15, 2025.
-- Differentiated AWS Free Tier plan options:
-  - Free Account Plan
-  - Paid Account Plan
-- Applied AWS Credits through practical hands-on tasks.
-- Completed **AWS Free Tier EC2 Task** (configuration, deployment, testing, and cleanup).
-- Explored **Amazon Bedrock Playground** and worked with Foundation Models for AI/ML testing.
-- Practiced prompt engineering and submitted **AWS Support Case** for restricted model access (Anthropic Claude).
-- Configured **AWS Budgets** with email alerts for cost monitoring.
-- Developed a **Serverless Web Application** using **AWS Lambda** and HTTP Blueprint.
-- Created and managed **Amazon RDS** instances using **Aurora PostgreSQL Compatible**.
-- Practiced strict resource cleanup habits to prevent unexpected cloud charges.
-- Formed a group of **4 members** for upcoming AWS projects.
+- Understood the main components of Amazon EC2: AMI, Instance Types, EBS, Security Groups, Key Pairs, and Elastic IP.
+- Practiced launching EC2 Instances, connecting through SSH, and managing EBS volumes.
+- Learned about the AWS Free Tier 2025 program and AWS Credits for eligible accounts.
+- Distinguished between Free Plan and Paid Plan.
+- Explored Amazon Bedrock Playground, Foundation Models, and prompt engineering.
+- Practiced creating AWS Budgets and configuring email cost alerts.
+- Built a Serverless Web Application using AWS Lambda and Function URL.
+- Created an Amazon RDS database and explored Aurora PostgreSQL.
+- Improved skills in monitoring AWS costs and cleaning up unused resources.
+- Completed the practical activities of AWS Free Tier Tasks 1–5.
+- Established a study group of four members to prepare for upcoming AWS projects.
 
 ---
 
 ## Overall Learning Outcomes
 
-Through the activities completed in Week 1, I built a solid foundation in **AWS Cloud Computing**, combining theoretical knowledge with practical hands-on experience.
+Through the activities completed in Week 1, I developed a solid foundation in AWS Cloud Computing by combining theoretical knowledge with practical experience.
 
-Key learning outcomes include:
-- Solid understanding of Cloud Computing principles and AWS ecosystem.
-- Familiarity with FCAJ rules, requirements, and learning roadmap.
-- Hands-on proficiency with AWS Management Console and AWS CLI.
-- Ability to deploy, connect, and manage Amazon EC2 and EBS resources.
-- Efficient utilization of AWS Free Tier 2025 and $200 Credits.
-- Experience with Serverless (Lambda), Databases (RDS), AI/ML (Bedrock), and Cost Management (Budgets).
-- Established effective cost monitoring, resource cleanup, and team collaboration practices.
+The key learning outcomes include:
+
+- Understanding the fundamental principles of Cloud Computing and the AWS ecosystem.
+- Understanding the regulations, requirements, and internship roadmap of the FCAJ program.
+- Knowing how to use AWS Management Console and AWS CLI.
+- Being able to launch, connect to, and manage Amazon EC2 and EBS resources.
+- Understanding the AWS Free Tier 2025 program and AWS Credits.
+- Gaining practical experience with Serverless Computing (Lambda), Databases (RDS), AI/ML (Bedrock), and Cost Management (Budgets).
+- Developing good habits in resource monitoring, cost control, and cleaning up unused AWS services.
+- Improving self-learning and teamwork skills to prepare for upcoming projects.
