@@ -55,8 +55,6 @@ draft: false
   - `aws configure list`
   - `aws sts get-caller-identity`
   - `aws ec2 describe-regions`
-  - <img width="548" height="107" alt="image" src="https://github.com/user-attachments/assets/99bfbbe0-9e43-47b5-bc11-97932e1ef1db" />
-
 - Hiểu được các thành phần chính của Amazon EC2: AMI, Instance Types, EBS, Security Groups, Key Pairs và Elastic IP.
 - Thực hành khởi tạo EC2 Instance, kết nối thông qua SSH và quản lý EBS Volume.
 - Tìm hiểu chương trình AWS Free Tier 2025 và AWS Credits dành cho các tài khoản đủ điều kiện.
