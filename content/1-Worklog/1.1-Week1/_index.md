@@ -55,8 +55,6 @@ draft: false
   - `aws configure list`
   - `aws sts get-caller-identity`
   - `aws ec2 describe-regions`
-  - <img width="548" height="107" alt="image" src="https://github.com/user-attachments/assets/9997bafd-cb02-41bd-b0be-fff825c73b91" />
-
 - Understood the main components of Amazon EC2: AMI, Instance Types, EBS, Security Groups, Key Pairs, and Elastic IP.
 - Practiced launching EC2 Instances, connecting through SSH, and managing EBS volumes.
 - Learned about the AWS Free Tier 2025 program and AWS Credits for eligible accounts.
