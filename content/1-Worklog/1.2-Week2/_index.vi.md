@@ -1,22 +1,21 @@
-
 ---
-title: "1.3. Nhật ký công việc Tuần 3"
-weight: 3
+title: "1.2. Nhật ký công việc Tuần 2"
+weight: 2
 draft: false
 ---
 
-## Mục tiêu Tuần 3
+## Mục tiêu Tuần 2
 
-- Tìm hiểu chuyên sâu về Amazon S3 Object Storage, cấu trúc Bucket, Object Key, Metadata và cơ chế Versioning.
-- Phân biệt các lớp lưu trữ S3 (Standard, Intelligent-Tiering, Standard-IA, Glacier) nhằm tối ưu chi phí lưu trữ dữ liệu.
-- Nắm vững các phương pháp bảo mật S3, bao gồm Block Public Access, Bucket Policies, ACLs và Server-Side Encryption (SSE-S3, SSE-KMS).
-- Tìm hiểu các thành phần cốt lõi của AWS Identity and Access Management (IAM), bao gồm Users, Groups, Roles và Policies.
-- Hiểu và áp dụng nguyên tắc Principle of Least Privilege trong quản lý quyền truy cập trên AWS.
-- Tích hợp thư viện AWSSDK.S3 vào ứng dụng Backend sử dụng C#/.NET.
-- Xây dựng các chức năng tải lên, tải xuống và xóa Object trên Amazon S3.
-- Triển khai Pre-signed URLs để chia sẻ tệp an toàn trong khoảng thời gian giới hạn.
-- Tìm hiểu và cấu hình CORS cho phép Frontend giao tiếp với Amazon S3.
-- Thiết lập S3 Lifecycle Policies để tự động quản lý vòng đời và dọn dẹp dữ liệu không còn sử dụng.
+- Tìm hiểu kiến trúc mạng ảo Amazon Virtual Private Cloud (Amazon VPC) và các thành phần cơ bản.
+- Hiểu cách phân chia địa chỉ IPv4 CIDR Block và thiết kế hệ thống mạng trên AWS.
+- Phân biệt Public Subnet và Private Subnet dựa trên cấu hình định tuyến và khả năng kết nối Internet.
+- Nắm được chức năng và nguyên lý hoạt động của Route Tables, Internet Gateway và NAT Gateway.
+- Tìm hiểu các cơ chế bảo mật mạng trong VPC, bao gồm Security Groups và Network ACLs.
+- Thực hành tạo VPC, cấu hình Subnet và thiết lập kết nối giữa các tài nguyên AWS.
+- Kiểm tra khả năng kết nối mạng giữa EC2 Instance và Internet.
+- Thảo luận cùng 4 thành viên để xây dựng ý tưởng dự án AWS.
+- Xác định vấn đề cần giải quyết, đối tượng người dùng mục tiêu và phạm vi triển khai ban đầu của dự án.
+- Nghiên cứu và lựa chọn các dịch vụ AWS phù hợp để phục vụ quá trình phát triển dự án nhóm.
 
 ---
 
@@ -24,30 +23,34 @@ draft: false
 
 | Thứ | Nội dung công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 | :---: | :--- | :---: | :---: | :--- |
-| **Thứ 2** | - Tìm hiểu tổng quan về Amazon S3 và thực hành các kiến thức cơ bản về Object Storage.<br>- Thực hành tạo S3 Bucket và tải Object lên Bucket.<br>- Tìm hiểu cấu trúc Object Key và cách quản lý Metadata của các Object.<br>- Thực hành bật và kiểm tra cơ chế Object Versioning để quản lý nhiều phiên bản của dữ liệu.<br>- Phân tích các lớp lưu trữ S3 gồm Standard, Intelligent-Tiering, Standard-IA và Glacier.<br>- So sánh đặc điểm, mục đích sử dụng và chi phí của từng lớp lưu trữ. | 05/10/2026 | 05/10/2026 | [Amazon S3 User Guide](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)<br>[S3 Storage Classes](https://aws.amazon.com/s3/storage-classes/) |
-| **Thứ 3** | - Tìm hiểu các cơ chế bảo mật dữ liệu trên Amazon S3.<br>- Thực hành bật Block Public Access nhằm ngăn chặn việc vô tình công khai dữ liệu ra Internet.<br>- Nghiên cứu cách hoạt động của Bucket Policies và Access Control Lists (ACLs).<br>- Viết các chính sách Bucket Policy bằng JSON để kiểm soát quyền truy cập vào tài nguyên S3.<br>- Tìm hiểu cơ chế mã hóa dữ liệu khi lưu trữ (Encryption at Rest).<br>- Thực hành cấu hình Server-Side Encryption với SSE-S3 và SSE-KMS.<br>- Kiểm tra quyền truy cập và trạng thái mã hóa của các Object trong Bucket. | 06/10/2026 | 06/10/2026 | [Amazon S3 Security](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html)<br>[S3 Bucket Policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) |
-| **Thứ 4** | - Tìm hiểu các kiến thức nền tảng về AWS Identity and Access Management (IAM).<br>- Phân biệt các thành phần IAM gồm Users, Groups, Roles và Policies.<br>- Tìm hiểu nguyên tắc Principle of Least Privilege trong quản lý bảo mật Cloud.<br>- Thực hành tạo IAM User dành riêng cho ứng dụng Backend.<br>- Xây dựng IAM Policy bằng JSON với các quyền được giới hạn cụ thể như `s3:GetObject` và `s3:PutObject`.<br>- Kiểm tra quyền truy cập của IAM User và đảm bảo ứng dụng chỉ có thể thực hiện những thao tác được cấp phép.<br>- Tìm hiểu cách quản lý thông tin xác thực AWS an toàn. | 07/10/2026 | 07/10/2026 | [AWS IAM Documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)<br>[IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) |
-| **Thứ 5** | - Tìm hiểu cách tích hợp thư viện AWSSDK.S3 vào dự án Backend sử dụng C#/.NET.<br>- Cài đặt và cấu hình package AWSSDK.S3 trong dự án.<br>- Xây dựng lớp S3Service để quản lý các thao tác với Amazon S3.<br>- Triển khai các phương thức `PutObjectAsync`, `GetObjectAsync` và `DeleteObjectAsync` để hỗ trợ tải lên, tải xuống và xóa Object.<br>- Tìm hiểu và triển khai Pre-signed URLs để chia sẻ Object riêng tư mà không cần công khai Bucket.<br>- Cấu hình thời hạn hiệu lực của Pre-signed URLs trong khoảng 15–30 phút.<br>- Tìm hiểu cách quản lý AWS Access Key và Secret Key thông qua Environment Variables để hạn chế lộ thông tin xác thực. | 08/10/2026 | 08/10/2026 | [AWS SDK for .NET S3 Guide](https://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/s3-index.html)<br>[Pre-signed URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html) |
-| **Thứ 6** | - Thực hành kiểm thử và xử lý các vấn đề phát sinh trong quá trình tích hợp Amazon S3 với ứng dụng Backend và Frontend.<br>- Phân tích và khắc phục lỗi CORS khi trình duyệt Frontend sử dụng Pre-signed URLs để tải tệp lên S3.<br>- Cấu hình CORS Rules cho S3 Bucket với các thuộc tính AllowedOrigins và AllowedMethods phù hợp.<br>- Kiểm tra hoạt động tải tệp từ trình duyệt sau khi cấu hình CORS.<br>- Thiết lập S3 Lifecycle Rules để tự động xóa các tệp tạm thời không còn sử dụng trong thư mục `temp/` sau 7 ngày.<br>- Kiểm tra lại các chính sách bảo mật, quyền IAM và chức năng xử lý Object.<br>- Chụp ảnh màn hình minh chứng, tổng hợp kết quả thực hành và hoàn thiện Worklog Tuần 3. | 09/10/2026 | 09/10/2026 | [S3 CORS Configuration](https://docs.aws.amazon.com/AmazonS3/latest/userguide/cors.html)<br>[S3 Lifecycle Management](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html) |
+| **Thứ 2** | - Thảo luận cùng 4 thành viên trong nhóm về định hướng dự án AWS.<br>- Brainstorm và đề xuất các ý tưởng dự án có khả năng triển khai trên nền tảng Cloud.<br>- Xác định vấn đề thực tế cần giải quyết và đối tượng người dùng mục tiêu (Target Users).<br>- Thảo luận phạm vi chức năng ban đầu (Project Scope) và các yêu cầu chính của dự án.<br>- Tìm hiểu tổng quan về Amazon VPC và vai trò của VPC trong kiến trúc hệ thống AWS. | 28/09/2026 | 28/09/2026 | [Amazon VPC Documentation](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html) |
+| **Thứ 3** | - Tìm hiểu kiến thức nền tảng về Amazon VPC và cách hoạt động của mạng riêng ảo trên AWS.<br>- Nghiên cứu IPv4 CIDR Block và cách xác định phạm vi địa chỉ IP cho VPC.<br>- Tìm hiểu cách phân chia Public Subnet và Private Subnet.<br>- Nghiên cứu chức năng của Route Table và Internet Gateway.<br>- Phân tích luồng dữ liệu giữa các Subnet và Internet.<br>- Phác thảo sơ đồ kiến trúc mạng VPC trước khi tiến hành triển khai thực tế. | 29/09/2026 | 29/09/2026 | [Amazon VPC Workshop](https://000003.awsstudygroup.com/)<br>[VPCs and Subnets](https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html)<br>[Route Tables](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html)<br>[Internet Gateways](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html) |
+| **Thứ 4** | - Thực hành tạo Amazon VPC và cấu hình IPv4 CIDR Block.<br>- Tạo Public Subnet và Private Subnet bên trong VPC.<br>- Tạo Internet Gateway và gắn vào VPC.<br>- Tạo Route Table cho Public Subnet và cấu hình tuyến mặc định `0.0.0.0/0` trỏ đến Internet Gateway.<br>- Liên kết Route Table với Public Subnet tương ứng.<br>- Khởi chạy EC2 Instance trong Public Subnet và Private Subnet để kiểm tra cấu hình mạng.<br>- Kiểm tra khả năng kết nối và phân tích sự khác biệt giữa hai loại Subnet. | 30/09/2026 | 30/09/2026 | [Amazon VPC Workshop](https://000003.awsstudygroup.com/)<br>[Create EC2 Server](https://000003.awsstudygroup.com/4-createec2server/4.1-createec2/)<br>[Amazon VPC Documentation](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html) |
+| **Thứ 5** | - Tìm hiểu cơ chế bảo mật mạng thông qua Security Groups và Network ACLs.<br>- Phân biệt Security Groups hoạt động ở cấp độ Network Interface và Network ACLs hoạt động ở cấp độ Subnet.<br>- Tìm hiểu đặc điểm Stateful của Security Groups và Stateless của Network ACLs.<br>- Thực hành cấu hình Inbound Rules và Outbound Rules cho từng lớp bảo mật.<br>- Tìm hiểu các cổng kết nối phổ biến như SSH (22) và HTTP (80).<br>- Kiểm tra lưu lượng mạng thông qua SSH, HTTP và ICMP (Ping).<br>- Quan sát kết quả khi thay đổi các quy tắc cho phép hoặc từ chối kết nối. | 01/10/2026 | 01/10/2026 | [Security Groups](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html)<br>[Network ACLs](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html) |
+| **Thứ 6** | - Tìm hiểu khái niệm và nguyên lý hoạt động của NAT Gateway.<br>- Phân biệt chức năng của NAT Gateway và Internet Gateway trong kiến trúc mạng AWS.<br>- Thực hành tạo NAT Gateway bên trong Public Subnet.<br>- Cấp phát và gắn Elastic IP cho NAT Gateway.<br>- Cập nhật Route Table của Private Subnet với tuyến mặc định `0.0.0.0/0` trỏ đến NAT Gateway.<br>- Kiểm tra khả năng truy cập Internet theo chiều outbound từ EC2 Instance trong Private Subnet.<br>- Phân tích cách NAT Gateway hỗ trợ tài nguyên Private Subnet truy cập Internet mà không cần nhận kết nối khởi tạo trực tiếp từ Internet. | 02/10/2026 | 02/10/2026 | [NAT Gateway Workshop](https://000003.awsstudygroup.com/4-createec2server/4.3-natgateway/)<br>[NAT Gateways](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html) |
+| **Chủ nhật** | - Tổng hợp kiến thức về Amazon VPC và các thành phần mạng đã tìm hiểu trong tuần.<br>- Kiểm tra lại cấu hình VPC, Public Subnet, Private Subnet, Route Tables, Internet Gateway và NAT Gateway.<br>- Rà soát các quy tắc Security Groups và Network ACLs.<br>- Hoàn thiện sơ đồ kiến trúc mạng VPC đã thiết kế.<br>- Tổng hợp kết quả thực hành và chụp ảnh màn hình minh chứng cho từng bước cấu hình.<br>- Kiểm tra trạng thái các tài nguyên AWS và dọn dẹp những tài nguyên không còn sử dụng để hạn chế phát sinh chi phí.<br>- Tổng hợp nội dung và hoàn thiện Worklog Tuần 2. | 04/10/2026 | 04/10/2026 | [Amazon VPC Documentation](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)<br>[AWS Cost Management](https://docs.aws.amazon.com/cost-management/) |
 
 ---
 
-## Kết quả đạt được trong Tuần 3
+## Kết quả đạt được trong Tuần 2
 
-- Hiểu chuyên sâu về Amazon S3 Object Storage, cấu trúc Bucket, Object, Metadata và cơ chế Versioning.
-- Phân biệt được các lớp lưu trữ S3 và hiểu cách lựa chọn lớp lưu trữ phù hợp nhằm tối ưu hiệu năng và chi phí.
-- Thực hành tạo S3 Bucket, tải Object lên, quản lý Metadata và kiểm tra các phiên bản dữ liệu.
-- Nắm được các cơ chế bảo mật trên Amazon S3, bao gồm Block Public Access, Bucket Policies và ACLs.
-- Thực hành xây dựng Bucket Policies bằng JSON để kiểm soát quyền truy cập vào tài nguyên S3.
-- Hiểu và cấu hình mã hóa dữ liệu khi lưu trữ bằng Server-Side Encryption, bao gồm SSE-S3 và SSE-KMS.
-- Nắm được các thành phần cốt lõi của AWS IAM gồm Users, Groups, Roles và Policies.
-- Hiểu và áp dụng nguyên tắc Principle of Least Privilege nhằm giới hạn quyền truy cập theo đúng nhu cầu của ứng dụng.
-- Thực hành tạo IAM User và cấu hình JSON Policy với các quyền truy cập S3 được giới hạn cụ thể.
-- Tích hợp thành công thư viện AWSSDK.S3 vào dự án Backend sử dụng C#/.NET.
-- Xây dựng lớp S3Service hỗ trợ các chức năng tải lên, tải xuống và xóa Object thông qua các phương thức bất đồng bộ.
-- Triển khai Pre-signed URLs để chia sẻ các Object riêng tư một cách an toàn mà không cần công khai S3 Bucket.
-- Hiểu cách quản lý AWS Access Key và Secret Key thông qua Environment Variables.
-- Tìm hiểu và cấu hình CORS để cho phép ứng dụng Frontend giao tiếp với Amazon S3.
-- Thực hành xử lý các lỗi liên quan đến CORS khi sử dụng Pre-signed URLs để tải tệp lên S3.
-- Thiết lập S3 Lifecycle Rules để tự động quản lý và dọn dẹp các tệp tạm thời sau thời gian quy định.
-- Nâng cao kỹ năng tích hợp dịch vụ lưu trữ Cloud với ứng dụng Backend C#/.NET, đồng thời cải thiện kiến thức về bảo mật và quản lý dữ liệu trên AWS.
+- Làm việc và trao đổi cùng 4 thành viên trong nhóm để xây dựng định hướng ban đầu cho dự án AWS.
+- Đề xuất và thảo luận các ý tưởng dự án, xác định vấn đề cần giải quyết, đối tượng người dùng mục tiêu và phạm vi triển khai ban đầu.
+- Hiểu được kiến trúc và chức năng cơ bản của Amazon VPC trong việc xây dựng hệ thống mạng riêng ảo trên AWS.
+- Nắm được cách sử dụng IPv4 CIDR Block để xác định phạm vi địa chỉ IP và phân chia các Subnet.
+- Phân biệt được Public Subnet và Private Subnet dựa trên cấu hình Route Table và khả năng kết nối Internet.
+- Hiểu được vai trò của Route Tables trong việc định tuyến lưu lượng mạng giữa các Subnet và Internet.
+- Thực hành tạo Amazon VPC, cấu hình IPv4 CIDR Block và triển khai Public Subnet, Private Subnet.
+- Tạo và gắn Internet Gateway vào VPC, đồng thời cấu hình Route Table để cho phép Public Subnet kết nối Internet.
+- Thực hành khởi chạy EC2 Instance trong các Subnet khác nhau và kiểm tra khả năng kết nối mạng.
+- Hiểu được sự khác biệt giữa Security Groups và Network ACLs:
+  - Security Groups hoạt động ở cấp độ tài nguyên và sử dụng cơ chế Stateful.
+  - Network ACLs hoạt động ở cấp độ Subnet và sử dụng cơ chế Stateless.
+- Thực hành cấu hình Inbound Rules và Outbound Rules để kiểm soát lưu lượng truy cập mạng.
+- Kiểm tra khả năng kết nối thông qua SSH, HTTP và ICMP (Ping), đồng thời quan sát hoạt động của các quy tắc bảo mật.
+- Hiểu được nguyên lý hoạt động của NAT Gateway và vai trò của Elastic IP trong kiến trúc mạng AWS.
+- Thực hành tạo NAT Gateway trong Public Subnet và cập nhật Route Table cho Private Subnet.
+- Kiểm tra khả năng truy cập Internet theo chiều outbound từ EC2 Instance trong Private Subnet.
+- Hoàn thiện sơ đồ kiến trúc mạng VPC, tổng hợp kết quả thực hành và lưu lại hình ảnh minh chứng.
+- Nâng cao kỹ năng thiết kế mạng, cấu hình định tuyến, kiểm soát truy cập và quản lý tài nguyên trên AWS.
+- Biết cách rà soát và dọn dẹp tài nguyên AWS sau khi thực hành nhằm hạn chế chi phí phát sinh không cần thiết.
