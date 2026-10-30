@@ -1,9 +1,8 @@
 ---
-title: "1.1. Nhật ký công việc Tuần 1"
+title: "Week 1: FCJ Workforce Orientation & AWS Foundation (21/09/2026 – 26/09/2026)"
 weight: 1
 draft: false
 ---
-
 ## Mục tiêu Tuần 1
 
 - Làm quen với các thành viên trong chương trình First Cloud AI Journey (FCAJ).
