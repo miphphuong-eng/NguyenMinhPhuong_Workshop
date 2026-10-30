@@ -22,7 +22,7 @@ Typically, and as a standard, a worklog is carried out over about 3 months (thro
 
 **Week 4:** [Snaptics Project Discussion, Sitemap, Wireframe & AWS Services (12/10/2026 – 16/10/2026)](1.4-week4/)
 
-**Week 5:** [Doing task D...](1.5-week5/)
+**Week 5:** [Frontend SPA Initialization, Design System Tokens, Layout & Auth UI (19/10/2026 – 23/10/2026)](1.5-week5/)
 
 **Week 6:** [Doing task E...](1.6-week6/)
 
