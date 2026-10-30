@@ -1,5 +1,5 @@
 ---
-title: "Week 1: FCJ Workforce Orientation & AWS Foundation (21/09/2026 – 26/09/2026)"
+title: "1.1. Week 1 Worklog"
 weight: 1
 draft: false
 ---
