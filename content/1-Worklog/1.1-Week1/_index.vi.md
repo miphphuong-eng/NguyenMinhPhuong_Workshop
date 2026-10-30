@@ -68,18 +68,3 @@ draft: false
 - Established a study group of four members to prepare for upcoming AWS projects.
 
 ---
-
-## Overall Learning Outcomes
-
-Through the activities completed in Week 1, I developed a solid foundation in AWS Cloud Computing by combining theoretical knowledge with practical experience.
-
-The key learning outcomes include:
-
-- Understanding the fundamental principles of Cloud Computing and the AWS ecosystem.
-- Understanding the regulations, requirements, and internship roadmap of the FCAJ program.
-- Knowing how to use AWS Management Console and AWS CLI.
-- Being able to launch, connect to, and manage Amazon EC2 and EBS resources.
-- Understanding the AWS Free Tier 2025 program and AWS Credits.
-- Gaining practical experience with Serverless Computing (Lambda), Databases (RDS), AI/ML (Bedrock), and Cost Management (Budgets).
-- Developing good habits in resource monitoring, cost control, and cleaning up unused AWS services.
-- Improving self-learning and teamwork skills to prepare for upcoming projects.
