@@ -19,7 +19,9 @@ The internship worklog covers approximately three months, from September to Dece
 
 **Week 4:** [Snaptics Project Discussion, Sitemap, Wireframe & AWS Services (12/10/2026 – 16/10/2026)](1.4-week4/)
 
+
 **Week 5:** [SPA Frontend Setup, Design System Tokens, Layout & Authentication Interfaces (19/10/2026 – 23/10/2026)](1.5-week5/)
+
 
 **Week 6:** [Overview Dashboard UI, Transactions & Expense Categories (26/10/2026 – 30/10/2026)](1.6-week6/)
 
