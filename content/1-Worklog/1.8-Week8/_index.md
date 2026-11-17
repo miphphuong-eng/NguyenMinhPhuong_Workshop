@@ -1,57 +1,36 @@
+
 ---
-title: "Week 8 Worklog"
-date: 2024-01-01
-weight: 1
-chapter: false
-pre: " <b> 1.8. </b> "
+title: "1.8. Worklog Week 8"
+weight: 8
+draft: false
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+## Week 8 Objectives
 
-### Week 8 Objectives:
+- Understand AWS PrivateLink and how Interface VPC Endpoints enable private connectivity to AWS services.
+- Learn how to configure an Interface VPC Endpoint for Amazon S3 to support hybrid access from on-premises environments.
+- Understand the role of Elastic Network Interfaces (ENIs), private IP addresses, Security Groups, and Private DNS.
+- Apply VPC Endpoint Policies to control access to Amazon S3 resources.
+- Write and test custom JSON Endpoint Policies to restrict access to approved S3 buckets.
+- Perform resource cleanup and review AWS costs after completing the practical exercises.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+## Weekly Activities
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Tasks | Start Date | Completion Date | Learning Resources |
+|---|---|---|---|---|
+| Monday | Study AWS PrivateLink and Interface VPC Endpoint architecture. Understand how Interface Endpoints create Elastic Network Interfaces (ENIs) with private IP addresses inside selected subnets. Learn how Private DNS simplifies service access. Compare Gateway and Interface Endpoints, focusing on their roles in connecting on-premises environments to AWS through VPN or Direct Connect. | 09/11/2026 | 09/11/2026 | [AWS PrivateLink Concepts](https://docs.aws.amazon.com/vpc/latest/privatelink/concepts.html) <br> [Amazon S3 Interface Endpoints](https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html) |
+| Tuesday | Create an Interface VPC Endpoint for Amazon S3 through the AWS Management Console. Select the appropriate VPC and subnets, configure the Security Group to allow HTTPS traffic on port 443 from the required source CIDR ranges, and review the endpoint's DNS configuration. Use `nslookup` or `dig` to inspect DNS resolution and identify the endpoint's private IP addresses. | 10/11/2026 | 10/11/2026 | [Interface VPC Endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/vpce-interface-endpoints.html) |
+| Wednesday | Study VPC Endpoint Policies and their relationship with IAM Policies and S3 Bucket Policies. Create a custom JSON Endpoint Policy to allow access only to approved company S3 buckets and specified actions. Review how the policy controls requests passing through the endpoint and understand the importance of applying least-privilege permissions. | 11/11/2026 | 11/11/2026 | [VPC Endpoint Policies](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-access.html) |
+| Thursday | Perform Endpoint Policy verification using AWS CLI. Test access to an approved company bucket using `aws s3 ls s3://allowed-company-bucket` and verify that the request is successful when all required permissions are configured. Test access to an external or unauthorized bucket using `aws s3 ls s3://external-personal-bucket` and verify that the request is denied by the Endpoint Policy. Record the results and review how Endpoint Policies help reduce the risk of unauthorized data transfers. | 12/11/2026 | 12/11/2026 | [VPC Endpoint Policies](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-access.html) <br> [Preventing Data Exfiltration](https://aws.amazon.com/blogs/security/how-to-use-vpc-endpoint-policies-to-prevent-data-exfiltration/) |
+| Friday | Perform resource cleanup after completing the exercises. Delete the Interface VPC Endpoint and verify that its associated endpoint network interfaces are removed automatically. Terminate test EC2 instances and delete test S3 buckets after confirming that they are no longer needed and are empty. Review AWS Billing and Cost Explorer to check for remaining charges or resources. Organize configuration files, JSON policy examples, screenshots, and technical notes to finalize Chapter 5 documentation. | 13/11/2026 | 13/11/2026 | [AWS PrivateLink Pricing](https://aws.amazon.com/privatelink/pricing/) <br> [AWS Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) |
 
+## Week 8 Achievements
 
-### Week 8 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Understood AWS PrivateLink and the architecture of Interface VPC Endpoints.
+- Learned how Interface Endpoints use ENIs, private IP addresses, and Private DNS to provide private connectivity to AWS services.
+- Understood how Interface VPC Endpoints can support hybrid access to Amazon S3 from on-premises environments through VPN or Direct Connect.
+- Practiced creating an S3 Interface VPC Endpoint and configuring its Security Groups and DNS settings.
+- Created custom JSON VPC Endpoint Policies to restrict access to approved S3 buckets and permitted actions.
+- Tested authorized and unauthorized S3 access using AWS CLI and understood how Endpoint Policies help prevent unwanted data transfers.
+- Practiced cleaning up AWS resources and reviewing billing information to reduce unnecessary cloud costs.
+- Organized technical notes, configuration examples, and screenshots for the Chapter 5 report.
