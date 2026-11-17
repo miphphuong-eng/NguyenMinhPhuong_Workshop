@@ -117,8 +117,6 @@ Attending the **"Fireside Chat with Dr. Werner Vogels"** event was a valuable op
 - Engineers should continuously learn, adapt, and focus on solving real-world problems.
 - Insights from experienced technology leaders can help bridge the gap between academic knowledge and practical engineering.
 
-
-
 ### Event Photos
 
 Below are photos captured during the **Fireside Chat with Dr. Werner Vogels** event at Bitexco Financial Tower, featuring the speaker session, interactive discussions, and networking with members of the Cloud and AI community.
@@ -151,4 +149,4 @@ Below are photos captured during the **Fireside Chat with Dr. Werner Vogels** ev
     Figure 3 - Attending the event to listen to and learn valuable knowledge from the speaker
   </figcaption>
 </figure>
-</div>
+
