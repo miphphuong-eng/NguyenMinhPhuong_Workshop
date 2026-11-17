@@ -120,3 +120,9 @@ Attending the **"Fireside Chat with Dr. Werner Vogels"** event was a valuable op
 ### Event Photos
 
 Below are photos captured during the **Fireside Chat with Dr. Werner Vogels** event at Bitexco Financial Tower, featuring the speaker session, interactive discussions, and networking with members of the Cloud and AI community.
+
+![Meeting at the event](/images/meevevent1.jpg)
+
+![Event speaker](/images/speakerevent1.jpg)
+
+![Dr. Werner Vogels](/images/wernerevent.jpg)
