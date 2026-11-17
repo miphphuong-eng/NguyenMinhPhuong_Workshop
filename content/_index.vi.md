@@ -23,8 +23,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 21/09/2026 đến ngày 12/12/
 
-![Your profile picture](static/images/myphoto.png)
-
+![Your profile picture](/NguyenMinhPhuong_Workshop/images/myphoto.png)
 
 ### Nội dung báo cáo
 
