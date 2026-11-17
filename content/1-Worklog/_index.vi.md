@@ -19,11 +19,11 @@ Nhật ký thực tập kéo dài khoảng ba tháng, từ tháng 9 đến thán
 
 **Tuần 5:** [Khởi tạo Frontend SPA, Token hệ thống thiết kế, Bố cục & Giao diện xác thực (19/10/2026 – 23/10/2026)](1.5-week5/)
 
-**Tuần 6:** [Giao diện Dashboard tổng quan, Giao dịch & Danh mục chi tiêu (26/10/2026 – 30/10/2026)](1.6-week6/)
+**Tuần 6:** [Giao diện Dashboard tổng quan, Giao dịch & Danh mục chi tiêu (26/10/2026 – 29/10/2026)](1.6-week6/)
 
 **Tuần 7:** [Giao diện quét hóa đơn & Biểu mẫu xác minh kết quả OCR (02/11/2026 – 06/11/2026)](1.7-week7/)
 
-**Tuần 8:** [Giao diện Ví cá nhân, Ví gia đình & Quản lý ngân sách (09/11/2026 – 13/11/2026)](1.8-week8/)
+**Tuần 8:** [Giao diện Ví cá nhân, Ví gia đình & Quản lý ngân sách (09/11/2026 – 14/11/2026)](1.8-week8/)
 
 **Tuần 9:** [Báo cáo phân tích chi tiêu & Giao diện Chatbot AI Insight (16/11/2026 – 20/11/2026)](1.9-week9/)
 
