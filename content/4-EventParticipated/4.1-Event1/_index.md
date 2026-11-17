@@ -118,21 +118,39 @@ Attending the **"Fireside Chat with Dr. Werner Vogels"** event was a valuable op
 - Insights from experienced technology leaders can help bridge the gap between academic knowledge and practical engineering.
 
 
+
 ### Event Photos
 
 Below are photos captured during the **Fireside Chat with Dr. Werner Vogels** event at Bitexco Financial Tower, featuring the speaker session, interactive discussions, and networking with members of the Cloud and AI community.
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; margin-top: 25px;">
 
-  <div>
-    <img src="/NguyenMinhPhuong_Workshop/images/wernerev1.jpg" width="100%">
-    <p style="text-align: center;"><strong>Figure 1 - Speaker Dr. Werner Vogels</strong></p>
-  </div>
+  <figure style="margin: 0; text-align: center;">
+    <div style="height: 320px; display: flex; align-items: center; justify-content: center; background: #f5f7fa; border-radius: 8px; overflow: hidden;">
+      <img src="/NguyenMinhPhuong_Workshop/images/wernerev1.jpg" style="width: 100%; height: 100%; object-fit: contain;">
+    </div>
+    <figcaption style="margin-top: 12px; font-weight: bold; color: #232f3e;">
+      Figure 1 - Speaker Dr. Werner Vogels
+    </figcaption>
+  </figure>
 
-  <div>
-    <img src="/NguyenMinhPhuong_Workshop/images/speakerev1.jpg" width="100%">
-    <p style="text-align: center;"><strong>Figure 2 - The speaker sharing insights and interacting with the audience</strong></p>
-  </div>
+  <figure style="margin: 0; text-align: center;">
+    <div style="height: 320px; display: flex; align-items: center; justify-content: center; background: #f5f7fa; border-radius: 8px; overflow: hidden;">
+      <img src="/NguyenMinhPhuong_Workshop/images/speakerev1.jpg" style="width: 100%; height: 100%; object-fit: contain;">
+    </div>
+    <figcaption style="margin-top: 12px; font-weight: bold; color: #232f3e;">
+      Figure 2 - The speaker sharing insights and interacting with the audience
+    </figcaption>
+  </figure>
+
+</div>
+
+<figure style="margin: 35px auto 0; text-align: center; max-width: 750px;">
+  <img src="/NguyenMinhPhuong_Workshop/images/event1.jpg" style="width: 75%; height: auto; border-radius: 8px;">
+  <figcaption style="margin-top: 12px; font-weight: bold; color: #232f3e;">
+    Figure 3 - Attending the event to listen to and learn valuable knowledge from the speaker
+  </figcaption>
+</figure>
 
   <div style="grid-column: 1 / 3; text-align: center;">
     <img src="/NguyenMinhPhuong_Workshop/images/event1.jpg" width="70%">
