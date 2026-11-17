@@ -1,34 +1,36 @@
+
 ---
-title: "Worklog"
-date: 2026-09-21
-weight: 1
-chapter: false
-pre: " <b> 1. </b> "
+title: "1.9. Worklog Week 9"
+weight: 9
+draft: false
 ---
-**On this page**, you will need to introduce your worklog. **How** did you complete it? How many weeks did you take to complete the program? **What** did you do in those weeks?
 
-Typically, and as a standard, a worklog is carried out over about 3 months (throughout the internship period) with weekly contents as follows:
+## Week 9 Objectives
 
-**Week 1:** [FCJ Workforce Orientation & AWS Foundation (21/09/2026 – 26/09/2026)](1.1-week1/)
+- Analyze project requirements and develop the team proposal for "IoT Weather Platform for Lab Research" to support the research activities of the ITea Lab team.
+- Define the project scope, objectives, and expected users, including an initial deployment of 5 Raspberry Pi and ESP32 weather stations with the ability to expand to 15 stations.
+- Design a unified AWS Serverless architecture using AWS IoT Core, AWS Lambda, Amazon S3, AWS Glue, API Gateway, AWS Amplify, and Amazon Cognito.
+- Define the MQTT-based telemetry ingestion workflow between edge devices and the AWS cloud platform.
+- Develop architecture diagrams illustrating both Edge Architecture and Platform Architecture.
+- Estimate monthly operating costs using AWS Pricing Calculator and identify potential technical and financial risks with appropriate mitigation strategies.
 
-**Week 2:** [Networking on AWS (Amazon VPC, Subnets, Routing & Security Groups) (28/09/2026 – 4/10/2026)](1.2-week2/)
+## Weekly Activities
 
-**Week 3:** [Compute & Database on AWS (Amazon EC2 & Amazon RDS) (05/10/2026 – 09/10/2026)](1.3-week3/)
+| Day | Tasks | Start Date | Completion Date | Learning Resources |
+|---|---|---|---|---|
+| Monday | Organize a team meeting to review and finalize the proposal requirements for "IoT Weather Platform for Lab Research". Analyze the limitations of existing weather monitoring systems, including manual data collection, fragmented storage, and limited real-time monitoring capabilities. Identify the target users, consisting of 5 ITea Lab researchers, and define the main project problems, objectives, scope, and expected outcomes. | 16/11/2026 | 16/11/2026 | [AWS IoT Core Overview](https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html) |
+| Tuesday | Design the telemetry data ingestion workflow from ESP32 sensors through Raspberry Pi edge devices to AWS IoT Core using the MQTT protocol. Study AWS IoT Core Rules for routing incoming messages to backend services. Design the Amazon S3 Data Lake structure to separate Raw and Processed data. Review the data flow and consider how the platform can support an expansion from 5 to 15 weather stations. | 17/11/2026 | 17/11/2026 | [AWS IoT Rules](https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html) <br> [Building Data Lakes on AWS](https://aws.amazon.com/solutions/implementations/data-lake-solution/) |
+| Wednesday | Research data processing and analytics using AWS Glue, including Glue Crawlers and Data Catalog for discovering and organizing datasets. Define the role of AWS Lambda in processing incoming data and supporting backend operations. Evaluate Amazon API Gateway for exposing backend APIs, AWS Amplify for hosting the Next.js dashboard, and Amazon Cognito for user authentication. Compare AWS CDK for Infrastructure as Code with AWS SDK for application-level service integration. | 18/11/2026 | 18/11/2026 | [AWS Glue Developer Guide](https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html) <br> [Amazon Cognito User Pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html) |
+| Thursday | Develop the system architecture diagrams. Draw the Edge Architecture to illustrate the data flow from ESP32 sensors to Raspberry Pi devices running Docker containers and transmitting telemetry through MQTT over Wi-Fi. Draw the Platform Architecture to describe interactions between AWS IoT Core, S3, AWS Glue, Lambda, API Gateway, Amplify, and Cognito. Prepare a risk management matrix covering network interruptions, sensor failures, data loss, and budget overruns. Propose mitigation strategies such as local data buffering, retry mechanisms, and resource monitoring. | 19/11/2026 | 19/11/2026 | [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/) |
+| Friday | Estimate monthly operating costs using AWS Pricing Calculator. Review the estimated service costs for AWS Lambda, Amazon S3, AWS Amplify, AWS Glue, and AWS IoT Core. Consolidate the preliminary monthly cost estimate of approximately $0.70, equivalent to $8.40 per year, based on the assumed usage and configuration. Review the assumptions and identify services whose costs may increase with data volume or usage. Finalize the proposal documentation, organize architecture diagrams and cost estimates, and integrate the bilingual content into the Hugo structure under `content/2-Proposal/`. Verify the website rendering and documentation links. | 20/11/2026 | 20/11/2026 | [AWS Pricing Calculator](https://calculator.aws/) |
 
-**Week 4:** [Snaptics Project Discussion, Sitemap, Wireframe & AWS Services (12/10/2026 – 16/10/2026)](1.4-week4/)
+## Week 9 Achievements
 
-**Week 5:** [Frontend SPA Initialization, Design System Tokens, Layout & Auth UI (19/10/2026 – 23/10/2026)](1.5-week5/)
-
-**Week 6:** [Doing task E...](1.6-week6/)
-
-**Week 7:** [Doing task G...](1.7-week7/)
-
-**Week 8:** [Doing task H...](1.8-week8/)
-
-**Week 9:** [Doing task I...](1.9-week9/)
-
-**Week 10:** [Doing task L...](1.10-week10/)
-
-**Week 11:** [Doing task M...](1.11-week11/)
-
-**Week 12:** [Doing task N...](1.12-week12/)
+- Developed the team proposal for "IoT Weather Platform for Lab Research" to address the limitations of manual weather monitoring and fragmented data management.
+- Defined the project scope for an initial deployment of 5 Raspberry Pi and ESP32 weather stations, with the capability to scale to 15 stations.
+- Designed a proposed AWS Serverless architecture integrating AWS IoT Core, Amazon S3 Data Lake, AWS Glue, Lambda, API Gateway, Amplify, and Cognito.
+- Established the MQTT-based telemetry ingestion workflow between edge devices and the AWS cloud platform.
+- Produced architecture diagrams illustrating both Edge Architecture and Platform Architecture.
+- Developed a risk management matrix addressing network interruptions, sensor failures, data loss, and budget overruns, including proposed mitigation strategies.
+- Prepared a preliminary monthly infrastructure cost estimate of approximately $0.70 using AWS Pricing Calculator, subject to the defined usage assumptions.
+- Organized and integrated the bilingual Proposal documentation into the Hugo platform under `content/2-Proposal/`.
