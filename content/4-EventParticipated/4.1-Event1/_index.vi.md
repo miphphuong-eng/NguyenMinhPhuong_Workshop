@@ -118,20 +118,26 @@ Tham gia sự kiện **"Fireside Chat with Dr. Werner Vogels"** là một cơ h�
 - Cloud Computing và AI là những công nghệ quan trọng đang định hình tương lai của ngành công nghệ.
 - Kỹ sư cần liên tục học hỏi, thích nghi và tập trung giải quyết các vấn đề thực tế.
 - Những chia sẻ từ các nhà lãnh đạo công nghệ giàu kinh nghiệm giúp thu hẹp khoảng cách giữa kiến thức học thuật và kinh nghiệm kỹ thuật thực tiễn.
-- 
 
-### Event Photos
+### Hình ảnh sự kiện
 
-Below are photos captured during the **Fireside Chat with Dr. Werner Vogels** event at Bitexco Financial Tower, featuring the speaker session, interactive discussions, and networking with members of the Cloud and AI community.
+Dưới đây là những hình ảnh được ghi lại trong sự kiện **Fireside Chat with Dr. Werner Vogels** tại Bitexco Financial Tower, bao gồm phần chia sẻ của diễn giả, các hoạt động thảo luận tương tác và giao lưu với cộng đồng Cloud và AI.
 
-**Figure 1 - Speaker Dr. Werner Vogels**
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
 
-![Speaker Dr. Werner Vogels](/NguyenMinhPhuong_Workshop/images/wernerev1.jpg)
+  <div>
+    <img src="/NguyenMinhPhuong_Workshop/images/wernerev1.jpg" width="100%">
+    <p style="text-align: center;"><strong>Hình 1 - Diễn giả Dr. Werner Vogels</strong></p>
+  </div>
 
-**Figure 2 - The speaker sharing insights and interacting with the audience**
+  <div>
+    <img src="/NguyenMinhPhuong_Workshop/images/speakerev1.jpg" width="100%">
+    <p style="text-align: center;"><strong>Hình 2 - Diễn giả chia sẻ và giao lưu với khán giả</strong></p>
+  </div>
 
-![The speaker interacting with the audience](/NguyenMinhPhuong_Workshop/images/speakerev1.jpg)
+  <div style="grid-column: 1 / 3; text-align: center;">
+    <img src="/NguyenMinhPhuong_Workshop/images/event1.jpg" width="70%">
+    <p><strong>Hình 3 - Tôi tham dự sự kiện để lắng nghe và học hỏi những kiến thức bổ ích từ diễn giả</strong></p>
+  </div>
 
-**Figure 3 - Attending the event to listen to and learn valuable knowledge from the speaker**
-
-![My participation in the event](/NguyenMinhPhuong_Workshop/images/event1.jpg)
+</div>
