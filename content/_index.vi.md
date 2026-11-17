@@ -23,7 +23,9 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 21/09/2026 đến ngày 12/12/
 
-![Ảnh đại diện của bạn](/images/avatar.png)
+<div align="center">
+  <img src="{{ "images/myphoto.png" | relURL }}" alt="Your profile picture" width="200">
+</div>
 
 
 
