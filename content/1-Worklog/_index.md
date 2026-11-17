@@ -19,11 +19,11 @@ The internship worklog covers approximately three months, from September to Dece
 
 **Week 5:** [SPA Frontend Setup, Design System Tokens, Layout & Authentication Interfaces (19/10/2026 – 23/10/2026)](1.5-week5/)
 
-**Week 6:** [Overview Dashboard UI, Transactions & Expense Categories (26/10/2026 – 30/10/2026)](1.6-week6/)
+**Week 6:** [Overview Dashboard UI, Transactions & Expense Categories (26/10/2026 – 29/10/2026)](1.6-week6/)
 
 **Week 7:** [Receipt Scanning UI & OCR Result Verification Form (02/11/2026 – 06/11/2026)](1.7-week7/)
 
-**Week 8:** [Personal & Family Wallet UI and Budget Management UI (09/11/2026 – 13/11/2026)](1.8-week8/)
+**Week 8:** [Personal & Family Wallet UI and Budget Management UI (09/11/2026 – 14/11/2026)](1.8-week8/)
 
 **Week 9:** [Spending Analysis Reports & AI Insight Chatbot UI (16/11/2026 – 20/11/2026)](1.9-week9/)
 
