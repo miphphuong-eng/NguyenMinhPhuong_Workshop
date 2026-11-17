@@ -151,10 +151,4 @@ Below are photos captured during the **Fireside Chat with Dr. Werner Vogels** ev
     Figure 3 - Attending the event to listen to and learn valuable knowledge from the speaker
   </figcaption>
 </figure>
-
-  <div style="grid-column: 1 / 3; text-align: center;">
-    <img src="/NguyenMinhPhuong_Workshop/images/event1.jpg" width="70%">
-    <p><strong>Figure 3 - Attending the event to listen to and learn valuable knowledge from the speaker</strong></p>
-  </div>
-
 </div>
