@@ -25,7 +25,7 @@ chapter: false
 
 &emsp; **Internship Duration:** From 21/09/2026 to 12/12/2026
 
-![Your profile picture](static/images/myphoto.png)
+![Your profile picture](/NguyenMinhPhuong_Workshop/images/myphoto.png)
 ### Report Content
 
 1.  [Worklog](1-Worklog/)
