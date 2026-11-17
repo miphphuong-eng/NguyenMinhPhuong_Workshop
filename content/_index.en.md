@@ -15,7 +15,7 @@ chapter: false
 
 &emsp; **Email:** miphphuong@gmail.com
 
-&emsp; **University:** Ho Chi Minh City University of Technology and Education
+&emsp; **University:** FPT University 
 
 &emsp; **Major:** SOFTWARE ENGINEERING
 
