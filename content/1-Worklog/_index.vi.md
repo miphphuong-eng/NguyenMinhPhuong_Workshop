@@ -19,7 +19,9 @@ Nhật ký thực tập kéo dài khoảng ba tháng, từ tháng 9 đến thán
 
 **Tuần 4:** [Thảo luận dự án Snaptics, Sitemap, Wireframe & Các dịch vụ AWS (12/10/2026 – 16/10/2026)](1.4-week4/)
 
-**Tuần 5:** [Khởi tạo Frontend SPA, Design System Tokens, Bố cục & Giao diện xác thực (19/10/2026 – 23/10/2026)](1.5-week5/)
+
+**Tuần 5:** [Khởi tạo Frontend SPA, Token hệ thống thiết kế, Bố cục & Giao diện xác thực (19/10/2026 – 23/10/2026)](1.5-week5/)
+
 
 **Tuần 6:** [Giao diện Dashboard tổng quan, Giao dịch & Danh mục chi tiêu (26/10/2026 – 30/10/2026)](1.6-week6/)
 
