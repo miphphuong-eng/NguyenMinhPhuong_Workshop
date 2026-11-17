@@ -6,9 +6,11 @@ chapter: false
 pre: "<b> 4.2. </b>"
 ---
 
+---
+
 # Báo cáo tổng kết: "Fireside Chat with Dr. Werner Vogels"
 
-### Mục tiêu sự kiện (Event Objectives)
+### Mục tiêu sự kiện
 
 - Mang đến cơ hội gặp gỡ và giao lưu trực tiếp với **Dr. Werner Vogels**, Giám đốc Công nghệ (CTO) của Amazon và là người tiên phong trong lĩnh vực điện toán đám mây hiện đại.
 - Chia sẻ góc nhìn từ ngành công nghệ về tương lai của **Điện toán đám mây (Cloud Computing) và Trí tuệ nhân tạo (AI)**.
@@ -16,7 +18,7 @@ pre: "<b> 4.2. </b>"
 - Thảo luận về đổi mới sáng tạo, lãnh đạo công nghệ và các xu hướng công nghệ mới nổi.
 - Kết nối sinh viên, lập trình viên, kiến trúc sư hệ thống và chuyên gia công nghệ thông qua các hoạt động thảo luận và giao lưu.
 
-### Diễn giả (Speaker)
+### Diễn giả 
 
 - **Dr. Werner Vogels** – Giám đốc Công nghệ (CTO) của tập đoàn Amazon.
 
@@ -116,20 +118,28 @@ Tham gia sự kiện **"Fireside Chat with Dr. Werner Vogels"** là một cơ h�
 - Cloud Computing và AI là những công nghệ quan trọng đang định hình tương lai của ngành công nghệ.
 - Kỹ sư cần liên tục học hỏi, thích nghi và tập trung giải quyết các vấn đề thực tế.
 - Những chia sẻ từ các nhà lãnh đạo công nghệ giàu kinh nghiệm giúp thu hẹp khoảng cách giữa kiến thức học thuật và kinh nghiệm kỹ thuật thực tiễn.
-
+- 
 ### Hình ảnh sự kiện
 
 Dưới đây là những hình ảnh được ghi lại trong sự kiện **Fireside Chat with Dr. Werner Vogels** tại Bitexco Financial Tower, bao gồm phần chia sẻ của diễn giả, các hoạt động thảo luận tương tác và giao lưu với cộng đồng Cloud và AI.
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
 
-&#x20; \<div>
-&#x20;   \<p>\<strong>Hình 1 - Diễn giả Dr. Werner Vogels\</strong>\</p>
-&#x20;   \<img src="/NguyenMinhPhuong_Workshop/images/wernerev1.jpg" width="100%">
-&#x20; \</div>
+  <div>
+    <p><strong>Hình 1 - Diễn giả Dr. Werner Vogels</strong></p>
+    <img src="/NguyenMinhPhuong_Workshop/images/wernerev1.jpg" width="100%">
+  </div>
 
-&#x20; \<div>     \<p>\<strong>Hình 2 - Diễn giả chia sẻ và giao lưu với khán giả\</strong>\</p>     \<img src="/NguyenMinhPhuong_Workshop/images/speakerev1.jpg" width="100%">   \</div>
+  <div>
+    <p><strong>Hình 2 - Diễn giả chia sẻ và giao lưu với khán giả</strong></p>
+    <img src="/NguyenMinhPhuong_Workshop/images/speakerev1.jpg" width="100%">
+  </div>
 
-&#x20; \<div style="grid-column: 1 / 3; text-align: center;">     \<p>\<strong>Hình 3 - Tôi tham dự sự kiện để lắng nghe và học hỏi những kiến thức bổ ích từ diễn giả\</strong>\</p>     \<img src="/NguyenMinhPhuong_Workshop/images/event1.jpg" width="70%">   \</div>
+  <div style="grid-column: 1 / 3; text-align: center;">
+    <p><strong>Hình 3 - Tôi tham dự sự kiện để lắng nghe và học hỏi những kiến thức bổ ích từ diễn giả</strong></p>
+    <img src="/NguyenMinhPhuong_Workshop/images/event1.jpg" width="70%">
+  </div>
 
 </div>
+
+
