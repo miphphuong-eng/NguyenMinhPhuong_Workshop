@@ -121,7 +121,7 @@ Tham gia sự kiện **"Fireside Chat with Dr. Werner Vogels"** là một cơ h�
 
 Dưới đây là những hình ảnh được ghi lại trong sự kiện **Fireside Chat with Dr. Werner Vogels** tại Bitexco Financial Tower, bao gồm phần chia sẻ của diễn giả, các hoạt động thảo luận tương tác và giao lưu với cộng đồng Cloud và AI.
 
-\<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
 
 &#x20; \<div>
 &#x20;   \<p>\<strong>Hình 1 - Diễn giả Dr. Werner Vogels\</strong>\</p>
@@ -132,4 +132,4 @@ Dưới đây là những hình ảnh được ghi lại trong sự kiện **Fir
 
 &#x20; \<div style="grid-column: 1 / 3; text-align: center;">     \<p>\<strong>Hình 3 - Tôi tham dự sự kiện để lắng nghe và học hỏi những kiến thức bổ ích từ diễn giả\</strong>\</p>     \<img src="/NguyenMinhPhuong_Workshop/images/event1.jpg" width="70%">   \</div>
 
-\</div>
+</div>
