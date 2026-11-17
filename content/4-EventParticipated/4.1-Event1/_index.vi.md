@@ -119,27 +119,19 @@ Tham gia sự kiện **"Fireside Chat with Dr. Werner Vogels"** là một cơ h�
 - Kỹ sư cần liên tục học hỏi, thích nghi và tập trung giải quyết các vấn đề thực tế.
 - Những chia sẻ từ các nhà lãnh đạo công nghệ giàu kinh nghiệm giúp thu hẹp khoảng cách giữa kiến thức học thuật và kinh nghiệm kỹ thuật thực tiễn.
 - 
+
 ### Hình ảnh sự kiện
 
 Dưới đây là những hình ảnh được ghi lại trong sự kiện **Fireside Chat with Dr. Werner Vogels** tại Bitexco Financial Tower, bao gồm phần chia sẻ của diễn giả, các hoạt động thảo luận tương tác và giao lưu với cộng đồng Cloud và AI.
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+**Hình 1 - Diễn giả Dr. Werner Vogels**
 
-  <div>
-    <p><strong>Hình 1 - Diễn giả Dr. Werner Vogels</strong></p>
-    <img src="/NguyenMinhPhuong_Workshop/images/wernerev1.jpg" width="100%">
-  </div>
+![Diễn giả Dr. Werner Vogels](/NguyenMinhPhuong_Workshop/images/wernerev1.jpg)
 
-  <div>
-    <p><strong>Hình 2 - Diễn giả chia sẻ và giao lưu với khán giả</strong></p>
-    <img src="/NguyenMinhPhuong_Workshop/images/speakerev1.jpg" width="100%">
-  </div>
+**Hình 2 - Diễn giả chia sẻ và giao lưu với khán giả**
 
-  <div style="grid-column: 1 / 3; text-align: center;">
-    <p><strong>Hình 3 - Tôi tham dự sự kiện để lắng nghe và học hỏi những kiến thức bổ ích từ diễn giả</strong></p>
-    <img src="/NguyenMinhPhuong_Workshop/images/event1.jpg" width="70%">
-  </div>
+![Diễn giả chia sẻ và giao lưu với khán giả](/NguyenMinhPhuong_Workshop/images/speakerev1.jpg)
 
-</div>
+**Hình 3 - Tôi tham dự sự kiện để lắng nghe và học hỏi những kiến thức bổ ích từ diễn giả**
 
-
+![Tôi tham dự sự kiện](/NguyenMinhPhuong_Workshop/images/event1.jpg)
