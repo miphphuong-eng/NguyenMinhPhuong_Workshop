@@ -119,25 +119,36 @@ Tham gia sự kiện **"Fireside Chat with Dr. Werner Vogels"** là một cơ h�
 - Kỹ sư cần liên tục học hỏi, thích nghi và tập trung giải quyết các vấn đề thực tế.
 - Những chia sẻ từ các nhà lãnh đạo công nghệ giàu kinh nghiệm giúp thu hẹp khoảng cách giữa kiến thức học thuật và kinh nghiệm kỹ thuật thực tiễn.
 
+
 ### Hình ảnh sự kiện
 
 Dưới đây là những hình ảnh được ghi lại trong sự kiện **Fireside Chat with Dr. Werner Vogels** tại Bitexco Financial Tower, bao gồm phần chia sẻ của diễn giả, các hoạt động thảo luận tương tác và giao lưu với cộng đồng Cloud và AI.
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; margin-top: 25px;">
 
-  <div>
-    <img src="/NguyenMinhPhuong_Workshop/images/wernerev1.jpg" width="100%">
-    <p style="text-align: center;"><strong>Hình 1 - Diễn giả Dr. Werner Vogels</strong></p>
-  </div>
+  <figure style="margin: 0; text-align: center;">
+    <div style="height: 320px; display: flex; align-items: center; justify-content: center; background: #f5f7fa; border-radius: 8px; overflow: hidden;">
+      <img src="/NguyenMinhPhuong_Workshop/images/wernerev1.jpg" style="width: 100%; height: 100%; object-fit: contain;">
+    </div>
+    <figcaption style="margin-top: 12px; font-weight: bold; color: #232f3e;">
+      Hình 1 - Diễn giả Dr. Werner Vogels
+    </figcaption>
+  </figure>
 
-  <div>
-    <img src="/NguyenMinhPhuong_Workshop/images/speakerev1.jpg" width="100%">
-    <p style="text-align: center;"><strong>Hình 2 - Diễn giả chia sẻ và giao lưu với khán giả</strong></p>
-  </div>
-
-  <div style="grid-column: 1 / 3; text-align: center;">
-    <img src="/NguyenMinhPhuong_Workshop/images/event1.jpg" width="70%">
-    <p><strong>Hình 3 - Tôi tham dự sự kiện để lắng nghe và học hỏi những kiến thức bổ ích từ diễn giả</strong></p>
-  </div>
+  <figure style="margin: 0; text-align: center;">
+    <div style="height: 320px; display: flex; align-items: center; justify-content: center; background: #f5f7fa; border-radius: 8px; overflow: hidden;">
+      <img src="/NguyenMinhPhuong_Workshop/images/speakerev1.jpg" style="width: 100%; height: 100%; object-fit: contain;">
+    </div>
+    <figcaption style="margin-top: 12px; font-weight: bold; color: #232f3e;">
+      Hình 2 - Diễn giả chia sẻ và giao lưu với khán giả
+    </figcaption>
+  </figure>
 
 </div>
+
+<figure style="margin: 35px auto 0; text-align: center; max-width: 750px;">
+  <img src="/NguyenMinhPhuong_Workshop/images/event1.jpg" style="width: 75%; height: auto; border-radius: 8px;">
+  <figcaption style="margin-top: 12px; font-weight: bold; color: #232f3e;">
+    Hình 3 - Tôi tham dự sự kiện để lắng nghe và học hỏi những kiến thức bổ ích từ diễn giả
+  </figcaption>
+</figure>
