@@ -1,126 +1,122 @@
 ---
 title: "Event 1"
-date: 2024-01-01
-weight: 1
+date: 2026-10-02
+weight: 2
 chapter: false
-pre: " <b> 4.1. </b> "
+pre: "<b> 4.2. </b>"
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: "Fireside Chat with Dr. Werner Vogels"
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Provide an opportunity to engage with **Dr. Werner Vogels**, CTO of Amazon and a pioneer in modern cloud computing.
+- Share industry perspectives on the future of **Cloud Computing and Artificial Intelligence (AI)**.
+- Explore engineering challenges involved in building and operating systems at global scale.
+- Discuss innovation, technology leadership, and emerging technology trends.
+- Connect students, developers, architects, and technology professionals through interactive discussions and networking.
 
-### Speakers
+### Speaker
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **Dr. Werner Vogels** – Chief Technology Officer (CTO), Amazon.
+
+### Event Information
+
+- **Date**: October 2, 2026 (Friday).
+- **Time**: 8:30 AM – 12:00 PM (GMT+7).
+- **Venue**: Bitexco Financial Tower, Ho Chi Minh City, Vietnam.
+- **Host**: Huỳnh Hoàng Long.
+- **Format**: Fireside Chat, Interactive Q&A, and Networking.
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### The Future of Cloud Computing
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+- **Cloud evolution**: Understanding the growing role of cloud infrastructure in modern technology.
+- **Scalability**: Building flexible systems that can handle increasing workloads and user demands.
+- **Digital transformation**: How cloud technologies enable businesses to innovate and modernize their operations.
 
-#### Transitioning to modern application architecture – Microservices
+#### Artificial Intelligence and Emerging Technologies
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+- **AI transformation**: Exploring how AI is changing software development and business operations.
+- **Intelligent applications**: Opportunities to integrate AI into modern digital services.
+- **Emerging trends**: Understanding technologies shaping the next generation of software systems.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### Building Systems at Global Scale
 
-#### Domain-Driven Design (DDD)
+- **Distributed systems**: Engineering challenges in building and operating systems serving users worldwide.
+- **Scalability and reliability**: Maintaining system performance and availability as workloads increase.
+- **Infrastructure management**: Designing systems capable of handling complex and growing operational demands.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+#### Innovation and Technology Leadership
 
-#### Event-Driven Architecture
+- **Engineering innovation**: Approaches to solving complex technological challenges.
+- **Technology leadership**: The importance of strategic thinking and technical decision-making.
+- **Continuous adaptation**: Keeping up with rapid changes in the technology industry.
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+#### Interactive Q&A and Networking
 
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+- Direct interaction and Q&A with Amazon CTO Dr. Werner Vogels.
+- Knowledge exchange with students, developers, engineers, and technology professionals.
+- Opportunities to expand professional connections within the Cloud and AI community.
 
 ### Key Takeaways
 
-#### Design Mindset
+#### Cloud & System Architecture
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+- **Scalable architecture**: Design systems with long-term growth and increasing workloads in mind.
+- **Distributed systems**: Understand the importance of reliability, availability, and fault tolerance.
+- **Cloud-native development**: Leverage cloud infrastructure to build flexible and maintainable applications.
 
-#### Technical Architecture
+#### AI & Innovation
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+- **AI-driven development**: Recognize AI as an important driver of software engineering transformation.
+- **Emerging technologies**: Continuously explore new technologies and their practical applications.
+- **Innovation mindset**: Focus on solving real-world problems rather than adopting technology without a clear purpose.
 
-#### Modernization Strategy
+#### Engineering Mindset
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+- **Long-term thinking**: Consider maintainability, scalability, and reliability from the beginning.
+- **Continuous learning**: Adapt technical knowledge and skills to evolving industry requirements.
+- **Problem-solving**: Combine technical expertise with strategic thinking to develop effective solutions.
 
 ### Applying to Work
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- **Improve cloud architecture**: Apply cloud-native principles to build scalable and reliable infrastructure for Snaptics.
+- **Enhance AI capabilities**: Use AI to analyze financial transactions, identify spending patterns, and generate personalized financial insights.
+- **Strengthen backend reliability**: Implement proper error handling, monitoring, and recovery mechanisms for critical financial operations.
+- **Design for scalability**: Ensure backend services can support increasing users and transaction volumes.
+- **Adopt problem-first thinking**: Prioritize real user needs when designing new features and selecting technologies.
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+Attending the **"Fireside Chat with Dr. Werner Vogels"** event was a valuable opportunity to gain insights from one of the world's leading technology executives and pioneers in cloud computing.
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+#### Learning from an Industry Technology Leader
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+- Gained broader perspectives on the future of **Cloud Computing, AI, and digital transformation**.
+- Learned about the challenges and considerations involved in building and operating systems at global scale.
+- Gained insights into innovation and technology leadership from Amazon's CTO.
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+#### Understanding Real-World Engineering Challenges
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+- Developed a better understanding of why **scalability, reliability, and system architecture** are essential in modern software development.
+- Connected academic knowledge of cloud computing and distributed systems with real-world industry challenges.
+- Recognized the importance of designing systems for long-term growth rather than focusing only on immediate requirements.
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+#### Interactive Discussions and Networking
 
-#### Some event photos
-*Add your event photos here*  
+- Had the opportunity to participate in interactive discussions and Q&A sessions.
+- Connected with students, developers, engineers, and other technology enthusiasts.
+- Exchanged perspectives and gained a broader understanding of the Cloud and AI technology community.
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+#### Lessons Learned
+
+- Successful software systems require careful architectural planning, scalability, and operational reliability.
+- Cloud Computing and AI are important technologies shaping the future of the technology industry.
+- Engineers should continuously learn, adapt, and focus on solving real-world problems.
+- Insights from experienced technology leaders can help bridge the gap between academic knowledge and practical engineering.
+
+### Event Photos
+
+Below are photos captured during the **Fireside Chat with Dr. Werner Vogels** event at Bitexco Financial Tower, featuring the speaker session, interactive discussions, and networking with members of the Cloud and AI community.
