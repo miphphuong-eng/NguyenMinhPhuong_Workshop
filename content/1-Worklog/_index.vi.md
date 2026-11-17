@@ -25,13 +25,13 @@ Thông thường và cũng là tiêu chuẩn, một worklog được thực hi�
 
 **Tuần 5:** [Khởi tạo Frontend SPA, Token hệ thống thiết kế, Bố cục & Giao diện xác thực (19/10/2026 – 23/10/2026)](1.5-week5/)
 
-**Tuần 6:** [Làm công việc E...](1.6-week6/)
+**Tuần 6:** [Giao diện Dashboard tổng quan, Giao dịch & Danh mục chi tiêu](1.6-week6/) *(26/10/2026 – 30/10/2026)*
 
-**Tuần 7:** [Làm công việc G...](1.7-week7/)
+**Tuần 7:** [Giao diện quét hóa đơn & Biểu mẫu xác minh kết quả OCR](1.7-week7/) *(02/11/2026 – 06/11/2026)*
 
-**Tuần 8:** [Làm công việc H...](1.8-week8/)
+**Tuần 8:** [Giao diện Ví cá nhân, Ví gia đình & Quản lý ngân sách](1.8-week8/) *(09/11/2026 – 13/11/2026)*
 
-**Tuần 9:** [Làm công việc I...](1.9-week9/)
+**Tuần 9:** [Báo cáo phân tích chi tiêu & Giao diện Chatbot AI Insight](1.9-week9/) *(16/11/2026 – 20/11/2026)*
 
 **Tuần 10:** [Làm công việc L...](1.10-week10/)
 
