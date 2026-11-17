@@ -1,36 +1,38 @@
 
 ---
-title: "1.9. Nhật ký công việc Tuần 9"
-weight: 9
+title: "1.8. Nhật ký công việc Tuần 8"
+weight: 8
 draft: false
 ---
 
-## Mục tiêu Tuần 9
+## Mục tiêu Tuần 8
 
-- Phân tích yêu cầu dự án và xây dựng bản đề xuất nhóm cho đề tài "IoT Weather Platform for Lab Research", phục vụ hoạt động nghiên cứu của nhóm ITea Lab.
-- Xác định phạm vi, mục tiêu và đối tượng sử dụng của dự án, với quy mô triển khai ban đầu gồm 5 trạm thời tiết sử dụng Raspberry Pi và ESP32, có khả năng mở rộng lên 15 trạm.
-- Thiết kế kiến trúc AWS Serverless thống nhất sử dụng AWS IoT Core, AWS Lambda, Amazon S3, AWS Glue, API Gateway, AWS Amplify và Amazon Cognito.
-- Xây dựng luồng thu thập dữ liệu cảm biến (Telemetry) thông qua giao thức MQTT giữa các thiết bị Edge và nền tảng AWS Cloud.
-- Thiết kế sơ đồ kiến trúc tổng thể, bao gồm Edge Architecture và Platform Architecture.
-- Ước tính chi phí vận hành hàng tháng bằng AWS Pricing Calculator và xác định các rủi ro kỹ thuật, tài chính cùng phương án giảm thiểu.
+- Tìm hiểu AWS PrivateLink và cách Interface VPC Endpoint thiết lập kết nối riêng tư đến các dịch vụ AWS.
+- Thực hành cấu hình Interface VPC Endpoint cho Amazon S3 nhằm hỗ trợ kết nối Hybrid Access từ môi trường On-premises.
+- Hiểu vai trò của Elastic Network Interfaces (ENIs), địa chỉ IP riêng, Security Groups và Private DNS.
+- Áp dụng VPC Endpoint Policies để kiểm soát quyền truy cập vào tài nguyên Amazon S3.
+- Viết và kiểm thử JSON Endpoint Policy nhằm giới hạn quyền truy cập vào các S3 Bucket được cho phép.
+- Thực hiện dọn dẹp tài nguyên và kiểm tra chi phí AWS sau khi hoàn thành các bài thực hành.
 
 ## Các công việc thực hiện trong tuần
 
 | Ngày | Nội dung công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 |---|---|---|---|---|
-| Thứ Hai | Tổ chức cuộc họp nhóm để rà soát và thống nhất các yêu cầu cho đề xuất dự án "IoT Weather Platform for Lab Research". Phân tích những hạn chế của hệ thống theo dõi thời tiết hiện tại, bao gồm việc thu thập dữ liệu thủ công, dữ liệu lưu trữ phân tán và khả năng giám sát theo thời gian thực còn hạn chế. Xác định đối tượng sử dụng là 5 thành viên nghiên cứu của ITea Lab, đồng thời làm rõ các vấn đề cần giải quyết, mục tiêu, phạm vi và kết quả kỳ vọng của dự án. | 16/11/2026 | 16/11/2026 | [AWS IoT Core Overview](https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html) |
-| Thứ Ba | Thiết kế quy trình thu thập dữ liệu Telemetry từ cảm biến ESP32 thông qua thiết bị Raspberry Pi Edge đến AWS IoT Core bằng giao thức MQTT. Tìm hiểu AWS IoT Core Rules để định tuyến dữ liệu nhận được đến các dịch vụ Backend. Thiết kế cấu trúc Amazon S3 Data Lake nhằm phân tách dữ liệu Raw và Processed. Rà soát luồng dữ liệu và xem xét khả năng mở rộng hệ thống từ 5 lên 15 trạm thời tiết. | 17/11/2026 | 17/11/2026 | [AWS IoT Rules](https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html) <br> [Building Data Lakes on AWS](https://aws.amazon.com/solutions/implementations/data-lake-solution/) |
-| Thứ Tư | Tìm hiểu giải pháp xử lý và phân tích dữ liệu bằng AWS Glue, bao gồm Glue Crawlers và Data Catalog để khám phá, tổ chức dữ liệu. Xác định vai trò của AWS Lambda trong việc xử lý dữ liệu đầu vào và hỗ trợ các hoạt động Backend. Đánh giá Amazon API Gateway để cung cấp Backend API, AWS Amplify để triển khai giao diện Dashboard Next.js và Amazon Cognito để xác thực người dùng. Phân biệt AWS CDK dùng cho Infrastructure as Code với AWS SDK dùng để tích hợp các dịch vụ AWS ở cấp độ ứng dụng. | 18/11/2026 | 18/11/2026 | [AWS Glue Developer Guide](https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html) <br> [Amazon Cognito User Pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html) |
-| Thứ Năm | Xây dựng các sơ đồ kiến trúc hệ thống. Thiết kế Edge Architecture mô tả luồng dữ liệu từ cảm biến ESP32 đến thiết bị Raspberry Pi chạy Docker Container, sau đó truyền dữ liệu Telemetry bằng MQTT thông qua Wi-Fi. Thiết kế Platform Architecture thể hiện sự tương tác giữa AWS IoT Core, S3, AWS Glue, Lambda, API Gateway, Amplify và Cognito. Xây dựng bảng đánh giá rủi ro bao gồm mất kết nối mạng, lỗi cảm biến, mất dữ liệu và vượt ngân sách. Đề xuất các phương án giảm thiểu như lưu trữ dữ liệu tạm thời tại Edge, cơ chế gửi lại dữ liệu và giám sát tài nguyên. | 19/11/2026 | 19/11/2026 | [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/) |
-| Thứ Sáu | Sử dụng AWS Pricing Calculator để ước tính chi phí vận hành hàng tháng. Rà soát chi phí dự kiến của AWS Lambda, Amazon S3, AWS Amplify, AWS Glue và AWS IoT Core. Tổng hợp mức chi phí sơ bộ khoảng $0.70/tháng, tương đương $8.40/năm, dựa trên các giả định về cấu hình và mức sử dụng. Kiểm tra các giả định tính toán và xác định những dịch vụ có thể phát sinh chi phí tăng theo dung lượng dữ liệu hoặc mức độ sử dụng. Hoàn thiện nội dung đề xuất, sắp xếp sơ đồ kiến trúc và bảng dự toán chi phí, tích hợp nội dung song ngữ vào cấu trúc Hugo tại `content/2-Proposal/`. Kiểm tra giao diện hiển thị và các đường dẫn tài liệu trên website. | 20/11/2026 | 20/11/2026 | [AWS Pricing Calculator](https://calculator.aws/) |
+| Thứ Hai | Tìm hiểu AWS PrivateLink và kiến trúc Interface VPC Endpoint. Nghiên cứu cách Interface Endpoint tạo Elastic Network Interface (ENI) với địa chỉ IP riêng bên trong các Subnet được lựa chọn. Tìm hiểu vai trò của Private DNS trong việc đơn giản hóa quá trình truy cập dịch vụ. So sánh Gateway Endpoint và Interface Endpoint, tập trung vào khả năng kết nối môi trường On-premises với AWS thông qua VPN hoặc Direct Connect. | 09/11/2026 | 09/11/2026 | [AWS PrivateLink Concepts](https://docs.aws.amazon.com/vpc/latest/privatelink/concepts.html) <br> [Amazon S3 Interface Endpoints](https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html) |
+| Thứ Ba | Tạo Interface VPC Endpoint cho Amazon S3 thông qua AWS Management Console. Lựa chọn VPC và Subnet phù hợp, cấu hình Security Group cho phép lưu lượng HTTPS qua cổng 443 từ các dải CIDR nguồn cần thiết và kiểm tra cấu hình DNS của Endpoint. Sử dụng `nslookup` hoặc `dig` để kiểm tra quá trình phân giải DNS và xác định các địa chỉ IP riêng của Endpoint. | 10/11/2026 | 10/11/2026 | [Interface VPC Endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/vpce-interface-endpoints.html) |
+| Thứ Tư | Tìm hiểu VPC Endpoint Policies và mối quan hệ giữa IAM Policies, S3 Bucket Policies và Endpoint Policies. Tạo JSON Endpoint Policy tùy chỉnh để chỉ cho phép truy cập các S3 Bucket của công ty đã được phê duyệt cùng những hành động cụ thể. Kiểm tra cách Policy kiểm soát các yêu cầu đi qua Endpoint và tìm hiểu nguyên tắc cấp quyền tối thiểu (Least Privilege). | 11/11/2026 | 11/11/2026 | [VPC Endpoint Policies](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-access.html) |
+| Thứ Năm | Kiểm thử Endpoint Policy bằng AWS CLI. Thử truy cập Bucket công ty được cho phép bằng lệnh `aws s3 ls s3://allowed-company-bucket` và xác minh yêu cầu thành công khi đã cấu hình đầy đủ các quyền cần thiết. Tiếp tục thử truy cập Bucket bên ngoài hoặc không được cấp quyền bằng lệnh `aws s3 ls s3://external-personal-bucket` và kiểm tra yêu cầu bị Endpoint Policy từ chối. Ghi lại kết quả và đánh giá cách Endpoint Policy giúp giảm nguy cơ truyền dữ liệu trái phép. | 12/11/2026 | 12/11/2026 | [VPC Endpoint Policies](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-access.html) <br> [Preventing Data Exfiltration](https://aws.amazon.com/blogs/security/how-to-use-vpc-endpoint-policies-to-prevent-data-exfiltration/) |
+| Thứ Sáu | Thực hiện dọn dẹp tài nguyên sau khi hoàn thành các bài thực hành. Xóa Interface VPC Endpoint và kiểm tra các Network Interface liên quan đến Endpoint được hệ thống tự động xóa. Terminate các EC2 thử nghiệm và xóa S3 Bucket thử nghiệm sau khi xác nhận không còn nhu cầu sử dụng và Bucket đã được làm trống. Kiểm tra AWS Billing và Cost Explorer để rà soát chi phí hoặc tài nguyên còn tồn tại. Tổng hợp các file cấu hình, ví dụ JSON Policy, ảnh chụp màn hình và ghi chú kỹ thuật để hoàn thiện tài liệu Chapter 5. | 13/11/2026 | 13/11/2026 | [AWS PrivateLink Pricing](https://aws.amazon.com/privatelink/pricing/) <br> [AWS Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) |
+| Thứ Bảy | Tham gia sự kiện Cloud Mastery do Trường Đại học FPT tổ chức. Tham dự các hoạt động và tìm hiểu thêm về các chủ đề liên quan đến Cloud Computing, công nghệ AWS và ứng dụng thực tế của điện toán đám mây. Tiếp thu thêm kiến thức thông qua những chia sẻ và trao đổi với các thành viên tham gia sự kiện. | 14/11/2026 | 14/11/2026 | Trường Đại học FPT – Sự kiện Cloud Mastery |
 
-## Kết quả đạt được trong Tuần 9
+## Kết quả đạt được trong Tuần 8
 
-- Xây dựng bản đề xuất dự án nhóm "IoT Weather Platform for Lab Research" nhằm giải quyết những hạn chế của việc theo dõi thời tiết thủ công và quản lý dữ liệu phân tán.
-- Xác định phạm vi dự án với quy mô triển khai ban đầu gồm 5 trạm thời tiết sử dụng Raspberry Pi và ESP32, có khả năng mở rộng lên 15 trạm.
-- Thiết kế kiến trúc AWS Serverless đề xuất, tích hợp AWS IoT Core, Amazon S3 Data Lake, AWS Glue, Lambda, API Gateway, Amplify và Cognito.
-- Xây dựng luồng thu thập dữ liệu Telemetry giữa các thiết bị Edge và nền tảng AWS Cloud thông qua giao thức MQTT.
-- Hoàn thành các sơ đồ kiến trúc mô tả cả Edge Architecture và Platform Architecture.
-- Xây dựng bảng quản lý rủi ro liên quan đến mất kết nối mạng, lỗi cảm biến, mất dữ liệu và vượt ngân sách, kèm theo các phương án giảm thiểu.
-- Hoàn thành dự toán chi phí hạ tầng sơ bộ khoảng $0.70/tháng bằng AWS Pricing Calculator, dựa trên các giả định sử dụng đã xác định.
-- Sắp xếp và tích hợp tài liệu Proposal song ngữ vào nền tảng Hugo tại thư mục `content/2-Proposal/`.
+- Hiểu được AWS PrivateLink và kiến trúc hoạt động của Interface VPC Endpoint.
+- Nắm được cách Interface Endpoint sử dụng ENI, địa chỉ IP riêng và Private DNS để thiết lập kết nối riêng tư đến các dịch vụ AWS.
+- Hiểu cách Interface VPC Endpoint hỗ trợ kết nối Hybrid Access đến Amazon S3 từ môi trường On-premises thông qua VPN hoặc Direct Connect.
+- Thực hành tạo S3 Interface VPC Endpoint và cấu hình Security Groups, DNS.
+- Xây dựng JSON VPC Endpoint Policies tùy chỉnh để giới hạn quyền truy cập vào các S3 Bucket được phê duyệt và những hành động được cho phép.
+- Kiểm thử quyền truy cập S3 hợp lệ và không hợp lệ bằng AWS CLI, hiểu cách Endpoint Policy hỗ trợ ngăn chặn truyền dữ liệu không mong muốn.
+- Thực hành dọn dẹp tài nguyên AWS và kiểm tra thông tin thanh toán nhằm hạn chế chi phí Cloud không cần thiết.
+- Tham gia sự kiện Cloud Mastery do Trường Đại học FPT tổ chức, có thêm cơ hội tiếp cận các công nghệ điện toán đám mây và học hỏi kinh nghiệm thông qua các hoạt động tại sự kiện.
+- Tổng hợp ghi chú kỹ thuật, ví dụ cấu hình và ảnh minh chứng để hoàn thiện báo cáo Chapter 5.
