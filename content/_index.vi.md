@@ -23,10 +23,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 21/09/2026 đến ngày 12/12/
 
-<div align="center">
-  <img src="{{ "images/myphoto.png" | relURL }}" alt="Your profile picture" width="200">
-</div>
-
+![Your profile picture](static/images/myphoto.png)
 
 
 ### Nội dung báo cáo
