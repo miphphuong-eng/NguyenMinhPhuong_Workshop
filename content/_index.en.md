@@ -25,10 +25,7 @@ chapter: false
 
 &emsp; **Internship Duration:** From 21/09/2026 to 12/12/2026
 
-<div align="center">
-  <img src="{{ "images/myphoto.png" | relURL }}" alt="Your profile picture" width="200">
-</div>
-
+![Your profile picture](../images/myphoto.png)
 ### Report Content
 
 1.  [Worklog](1-Worklog/)
