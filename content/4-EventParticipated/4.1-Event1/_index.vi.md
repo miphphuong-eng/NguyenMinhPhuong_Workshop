@@ -117,7 +117,7 @@ Tham gia sự kiện **"Fireside Chat with Dr. Werner Vogels"** là một cơ h�
 - Kỹ sư cần liên tục học hỏi, thích nghi và tập trung giải quyết các vấn đề thực tế.
 - Những chia sẻ từ các nhà lãnh đạo công nghệ giàu kinh nghiệm giúp thu hẹp khoảng cách giữa kiến thức học thuật và kinh nghiệm kỹ thuật thực tiễn.
 
-### Hình ảnh sự kiện (Event Photos)
+### Hình ảnh sự kiện
 
 Dưới đây là những hình ảnh được ghi lại trong sự kiện **Fireside Chat with Dr. Werner Vogels** tại Bitexco Financial Tower, bao gồm phần chia sẻ của diễn giả, các hoạt động thảo luận tương tác và giao lưu với cộng đồng Cloud và AI.
 
