@@ -1,125 +1,232 @@
+
 ---
-title: "Event 2"
-date: 2024-01-01
-weight: 1
+title: "Sự kiện 2"
+date: 2026-11-14
+weight: 3
 chapter: false
-pre: " <b> 4.2. </b> "
+pre: "<b> 4.3. </b>"
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Báo cáo tổng kết: "Cloud Mastery 1"
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+### Mục tiêu sự kiện
 
-### Mục Đích Của Sự Kiện
+- Tạo cơ hội cho sinh viên FPT tìm hiểu sâu hơn về **Cloud Computing** và các ứng dụng thực tế.
+- Xây dựng môi trường để sinh viên trao đổi kiến thức và học hỏi kinh nghiệm từ những người đi trước trong ngành công nghệ.
+- Giúp sinh viên hiểu rõ hơn về công nghệ điện toán đám mây và vai trò của nó trong phát triển phần mềm hiện đại.
+- Khuyến khích sinh viên tích cực tham gia các hoạt động của nhà trường và kết nối với cộng đồng công nghệ.
+- Truyền cảm hứng để sinh viên tiếp tục phát triển kiến thức chuyên môn và kỹ năng thực hành.
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+### Thông tin sự kiện
 
-### Danh Sách Diễn Giả
+- **Tên sự kiện:** Cloud Mastery 1.
+- **Thời gian:** Thứ Bảy, ngày 14 tháng 11 năm 2026.
+- **Địa điểm:** Tầng 26, Tòa nhà Bitexco, Thành phố Hồ Chí Minh, Việt Nam.
+- **Hình thức đăng ký:** Đăng ký trực tiếp thông qua portal của nhà trường.
+- **Hình thức tổ chức:** Tham gia trực tiếp tại địa điểm tổ chức.
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+### Nội dung nổi bật
 
-### Nội Dung Nổi Bật
+#### Chia sẻ kiến thức về Cloud Computing
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+- **Kiến thức nền tảng:** Mở rộng hiểu biết về Cloud Computing và vai trò của công nghệ này trong lĩnh vực công nghệ hiện đại.
+- **Kiến thức ngành:** Học hỏi từ những kinh nghiệm và kiến thức được chia sẻ bởi các anh chị có nhiều kinh nghiệm hơn.
+- **Góc nhìn thực tế:** Hiểu rõ hơn cách công nghệ Cloud được ứng dụng trong quá trình phát triển phần mềm thực tế.
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+#### Học hỏi kinh nghiệm từ những người đi trước
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+- **Chia sẻ kinh nghiệm:** Lắng nghe các anh chị chia sẻ kiến thức và những kinh nghiệm tích lũy được trong quá trình học tập, làm việc.
+- **Phát triển chuyên môn:** Hiểu được tầm quan trọng của việc liên tục trau dồi kiến thức kỹ thuật và kỹ năng thực hành.
+- **Định hướng nghề nghiệp:** Có thêm góc nhìn hữu ích về quá trình học tập và phát triển sự nghiệp trong ngành công nghệ.
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+#### Giao lưu và kết nối sinh viên
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+- **Kết nối cộng đồng:** Gặp gỡ và giao lưu với các sinh viên FPT có cùng sự quan tâm đến Cloud Computing.
+- **Tham gia cùng đồng đội:** Cùng thành viên trong nhóm tham gia sự kiện để học hỏi và tìm hiểu công nghệ Cloud.
+- **Trao đổi kiến thức:** Chia sẻ mối quan tâm học tập và góc nhìn với những người tham gia khác.
 
-#### Domain-Driven Design (DDD)
+### Những kiến thức và kinh nghiệm rút ra
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+#### Cloud Computing
 
-#### Event-Driven Architecture
+- **Hiểu biết về Cloud:** Nâng cao nhận thức về vai trò của công nghệ Cloud trong các ứng dụng hiện đại.
+- **Học tập thực tế:** Nhận thấy tầm quan trọng của việc kết hợp kiến thức lý thuyết với kinh nghiệm thực hành.
+- **Chủ động tìm hiểu:** Duy trì tinh thần học hỏi và tiếp tục khám phá các nền tảng, dịch vụ và công cụ Cloud.
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+#### Học hỏi từ kinh nghiệm thực tế
 
-#### Compute Evolution
+- **Chia sẻ kiến thức:** Tiếp thu những kinh nghiệm và lời khuyên từ các anh chị đi trước.
+- **Phát triển chuyên môn:** Hiểu rằng việc nâng cao năng lực kỹ thuật đòi hỏi quá trình học tập và thực hành liên tục.
+- **Tinh thần học hỏi:** Chủ động tìm hiểu công nghệ mới và cải thiện kỹ năng cá nhân.
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+#### Hợp tác và giao tiếp
 
-#### Amazon Q Developer
+- **Làm việc nhóm:** Nhận thức được giá trị của việc cùng đồng đội học hỏi và khám phá công nghệ mới.
+- **Giao tiếp:** Cải thiện khả năng trao đổi ý tưởng và thảo luận các chủ đề kỹ thuật.
+- **Kết nối:** Mở rộng mối quan hệ với những sinh viên có cùng sở thích và định hướng công nghệ.
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+### Áp dụng vào công việc
 
-### Những Gì Học Được
+- **Củng cố kiến thức Cloud:** Vận dụng những kiến thức đã học vào quá trình phát triển dự án Smart Expense Tracker.
+- **Tìm hiểu dịch vụ AWS:** Tiếp tục nghiên cứu các dịch vụ AWS hỗ trợ phát triển ứng dụng và quản lý hạ tầng.
+- **Cải thiện kiến trúc hệ thống:** Quan tâm đến khả năng mở rộng, tính ổn định và tính sẵn sàng khi thiết kế hạ tầng ứng dụng.
+- **Chia sẻ kiến thức với đồng đội:** Trao đổi những thông tin hữu ích từ sự kiện và vận dụng kiến thức phù hợp vào dự án.
+- **Tiếp tục học tập thực tế:** Khám phá công nghệ Cloud thông qua thực hành và các dự án thực tế.
 
-#### Tư Duy Thiết Kế
+### Trải nghiệm sự kiện
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+Tham gia sự kiện **Cloud Mastery 1** là cơ hội hữu ích để tìm hiểu thêm về Cloud Computing, lắng nghe những chia sẻ kinh nghiệm và kết nối với các sinh viên FPT có cùng sự quan tâm đến lĩnh vực công nghệ.
 
-#### Kiến Trúc Kỹ Thuật
+#### Học hỏi từ những người đi trước
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+- Lắng nghe các anh chị chia sẻ kiến thức và những bài học tích lũy được trong quá trình học tập và làm việc.
+- Có thêm góc nhìn về tầm quan trọng của kiến thức chuyên môn và kinh nghiệm thực tế.
+- Nhận thấy giá trị của việc học hỏi từ những người có nhiều kinh nghiệm trong ngành công nghệ.
 
-#### Chiến Lược Hiện Đại Hóa
+#### Hiểu rõ hơn về tầm quan trọng của Cloud Computing
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+- Hiểu rõ hơn lý do Cloud Computing trở thành một công nghệ quan trọng trong phát triển phần mềm hiện đại.
+- Có thêm động lực tìm hiểu các nền tảng Cloud và ứng dụng thực tế của chúng.
+- Nhận thức được tầm quan trọng của việc liên tục cập nhật kiến thức kỹ thuật để theo kịp sự phát triển của ngành.
 
-### Ứng Dụng Vào Công Việc
+#### Tham gia sự kiện cùng đồng đội
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
-
-### Trải nghiệm trong event
-
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+- Cùng một thành viên trong nhóm tham gia sự kiện để tìm hiểu thêm về Cloud Computing.
+- Chia sẻ những quan sát và trao đổi các thông tin hữu ích sau khi tham gia.
+- Có cơ hội giao lưu với các sinh viên khác và mở rộng hiểu biết về công nghệ Cloud.
 
 #### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
 
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+- Học hỏi từ những người có kinh nghiệm giúp sinh viên tiếp cận những góc nhìn thực tế bên cạnh kiến thức trên lớp.
+- Cloud Computing là lĩnh vực công nghệ quan trọng, đòi hỏi sự học hỏi và thực hành liên tục.
+- Chia sẻ kiến thức và kinh nghiệm giúp sinh viên hiểu rõ hơn về ngành công nghệ.
+- Cùng đồng đội học hỏi và trao đổi ý tưởng có thể giúp quá trình tiếp thu kiến thức hiệu quả hơn.
+
+### Hình ảnh sự kiện
+
+Dưới đây là một số hình ảnh được ghi lại trong sự kiện **Cloud Mastery 1** tại Tầng 26, Tòa nhà Bitexco, bao gồm hình ảnh tập thể sinh viên và diễn giả, hoạt động chia sẻ kinh nghiệm cũng như khoảnh khắc tôi cùng đồng đội tham gia chương trình.
+
+<style>
+.event-gallery {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 28px !important;
+  width: 100% !important;
+  margin: 28px 0 !important;
+  align-items: start !important;
+}
+
+.event-photo {
+  display: block !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 12px !important;
+  box-sizing: border-box !important;
+  background: #ffffff !important;
+  border: 1px solid #e5eaf0 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 14px rgba(35, 47, 62, 0.10) !important;
+  overflow: hidden !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.event-photo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(35, 47, 62, 0.16) !important;
+}
+
+.event-photo > img {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: 340px !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-radius: 8px !important;
+}
+
+.event-photo figcaption {
+  display: block !important;
+  padding: 14px 8px 5px !important;
+  color: #232f3e !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  text-align: center !important;
+}
+
+.event-photo:last-child {
+  grid-column: 1 / -1 !important;
+  width: min(100%, 760px) !important;
+  justify-self: center !important;
+}
+
+.event-photo:last-child > img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 480px !important;
+  object-fit: contain !important;
+  background: #f5f7fa !important;
+}
+
+@media screen and (max-width: 768px) {
+  .event-gallery {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .event-photo > img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 360px !important;
+    object-fit: contain !important;
+    background: #f5f7fa !important;
+  }
+
+  .event-photo:last-child {
+    grid-column: auto !important;
+    width: 100% !important;
+  }
+}
+</style>
+
+<div class="event-gallery">
+
+  <figure class="event-photo">
+    <img
+      src="/NguyenMinhPhuong_Workshop/images/cloud-mastery-1-group.jpg"
+      alt="Toàn thể sinh viên FPT và diễn giả tham gia sự kiện Cloud Mastery 1"
+      loading="lazy"
+    >
+    <figcaption>
+      Hình 1 - Toàn thể sinh viên và diễn giả tham gia sự kiện Cloud Mastery 1
+    </figcaption>
+  </figure>
+
+  <figure class="event-photo">
+    <img
+      src="/NguyenMinhPhuong_Workshop/images/cloud-mastery-1-sharing.jpg"
+      alt="Các anh chị đi trước chia sẻ kiến thức và kinh nghiệm"
+      loading="lazy"
+    >
+    <figcaption>
+      Hình 2 - Các anh chị đi trước chia sẻ những kiến thức và kinh nghiệm đã tích lũy được
+    </figcaption>
+  </figure>
+
+  <figure class="event-photo">
+    <img
+      src="/NguyenMinhPhuong_Workshop/images/cloud-mastery-1-team.jpg"
+      alt="Tôi và thành viên cùng nhóm tham gia sự kiện Cloud Mastery 1"
+      loading="lazy"
+    >
+    <figcaption>
+      Hình 3 - Tôi và bạn cùng nhóm tham gia sự kiện để tìm hiểu rõ hơn về Cloud Computing
+    </figcaption>
+  </figure>
+
+</div>
