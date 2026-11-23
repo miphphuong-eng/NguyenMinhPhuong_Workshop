@@ -124,74 +124,88 @@ Dưới đây là những hình ảnh được ghi lại trong sự kiện **Fir
 
 <style>
 .event-gallery {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 28px;
-  margin-top: 28px;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 28px !important;
+  width: 100% !important;
+  margin: 28px 0 !important;
+  align-items: start !important;
 }
 
 .event-photo {
-  margin: 0;
-  padding: 12px;
-  background: #ffffff;
-  border: 1px solid #e5eaf0;
-  border-radius: 12px;
-  box-shadow: 0 4px 14px rgba(35, 47, 62, 0.08);
+  display: block !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 12px !important;
+  box-sizing: border-box !important;
+  background: #ffffff !important;
+  border: 1px solid #e5eaf0 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 14px rgba(35, 47, 62, 0.10) !important;
+  overflow: hidden !important;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .event-photo:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 22px rgba(35, 47, 62, 0.14);
+  box-shadow: 0 8px 22px rgba(35, 47, 62, 0.16) !important;
 }
 
-.event-photo img {
-  display: block;
-  width: 100%;
-  height: 340px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 8px;
+.event-photo > img {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: 340px !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-radius: 8px !important;
 }
 
 .event-photo figcaption {
-  padding: 14px 8px 5px;
-  color: #232f3e;
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 1.5;
-  text-align: center;
+  display: block !important;
+  padding: 14px 8px 5px !important;
+  color: #232f3e !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  text-align: center !important;
 }
 
 .event-photo:last-child {
-  grid-column: 1 / -1;
-  width: min(100%, 760px);
-  justify-self: center;
+  grid-column: 1 / -1 !important;
+  width: min(100%, 760px) !important;
+  justify-self: center !important;
 }
 
-.event-photo:last-child img {
-  height: auto;
-  max-height: 480px;
-  object-fit: contain;
-  background: #f5f7fa;
+.event-photo:last-child > img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 480px !important;
+  object-fit: contain !important;
+  background: #f5f7fa !important;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .event-gallery {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
   }
 
-  .event-photo img {
-    height: auto;
-    max-height: 360px;
-    object-fit: contain;
-    background: #f5f7fa;
+  .event-photo > img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 360px !important;
+    object-fit: contain !important;
+    background: #f5f7fa !important;
   }
 
   .event-photo:last-child {
-    grid-column: auto;
-    width: 100%;
+    grid-column: auto !important;
+    width: 100% !important;
   }
 }
 </style>
