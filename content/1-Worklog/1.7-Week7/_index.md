@@ -1,6 +1,6 @@
 
 ---
-title: "1.7. Worklog Week 7"
+title: "1.7. Week 7 Worklog"
 weight: 7
 draft: false
 ---
