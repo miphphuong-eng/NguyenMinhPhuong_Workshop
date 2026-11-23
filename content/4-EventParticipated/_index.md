@@ -15,10 +15,10 @@ During my internship, I participated in three events. Each one was a memorable e
 ---
 
 ### [Event 2](4.2-Event2/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
+&emsp;**Event Name:** Cloud Mastery 1
 
-&emsp;**Date & Time:** 09:00, August 13, 2025  
+&emsp;**Date & Time:** Saturday, November 14, 2026
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+&emsp;**Location:** 26th Floor, Bitexco Tower, Ho Chi Minh City, Vietnam
 
-&emsp;**Role:** Attendee  
+&emsp;**Role:** Attendee
