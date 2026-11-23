@@ -27,7 +27,7 @@ Nhật ký thực tập kéo dài khoảng ba tháng, từ tháng 9 đến thán
 
 **Tuần 9:** [Báo cáo phân tích chi tiêu & Giao diện Chatbot AI Insight (16/11/2026 – 20/11/2026)](1.9-week9/)
 
-**Tuần 10:** [Các hoạt động thực tập tiếp theo](1.10-week10/)
+**Tuần 10:** [AWS IoT Core, Lambda, API Gateway, Glue ETL & Kiến trúc E-Commerce có khả năng mở rộng (23/11/2026 – 27/11/2026)](1.10-week10/)
 
 **Tuần 11:** [Các hoạt động thực tập tiếp theo](1.11-week11/)
 
