@@ -122,43 +122,127 @@ Attending the **"Fireside Chat with Dr. Werner Vogels"** event was a valuable op
 
 Below are photos captured during the **Fireside Chat with Dr. Werner Vogels** event at Bitexco Financial Tower, featuring the speaker session, interactive discussions, and networking with members of the Cloud and AI community.
 
-<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; margin-top: 25px;">
+<style>
+.event-gallery {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 28px !important;
+  width: 100% !important;
+  margin: 28px 0 !important;
+  align-items: start !important;
+}
 
-  <figure style="margin: 0; text-align: center;">
-    <div style="height: 320px; display: flex; align-items: center; justify-content: center; background: #f5f7fa; border-radius: 8px; overflow: hidden;">
-      <img
-        src="/NguyenMinhPhuong_Workshop/images/werner-vogels-event.jpg"
-        alt="Dr. Werner Vogels"
-        style="width: 100%; height: 100%; object-fit: contain;"
-      >
-    </div>
-    <figcaption style="margin-top: 12px; font-weight: bold; color: #232f3e;">
+.event-photo {
+  display: block !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 12px !important;
+  box-sizing: border-box !important;
+  background: #ffffff !important;
+  border: 1px solid #e5eaf0 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 14px rgba(35, 47, 62, 0.10) !important;
+  overflow: hidden !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.event-photo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(35, 47, 62, 0.16) !important;
+}
+
+.event-photo > img {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: 340px !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-radius: 8px !important;
+}
+
+.event-photo figcaption {
+  display: block !important;
+  padding: 14px 8px 5px !important;
+  color: #232f3e !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  text-align: center !important;
+}
+
+.event-photo:last-child {
+  grid-column: 1 / -1 !important;
+  width: min(100%, 760px) !important;
+  justify-self: center !important;
+}
+
+.event-photo:last-child > img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 480px !important;
+  object-fit: contain !important;
+  background: #f5f7fa !important;
+}
+
+@media screen and (max-width: 768px) {
+  .event-gallery {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .event-photo > img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 360px !important;
+    object-fit: contain !important;
+    background: #f5f7fa !important;
+  }
+
+  .event-photo:last-child {
+    grid-column: auto !important;
+    width: 100% !important;
+  }
+}
+</style>
+
+<div class="event-gallery">
+
+  <figure class="event-photo">
+    <img
+      src="/NguyenMinhPhuong_Workshop/images/werner-vogels-event.jpg"
+      alt="Dr. Werner Vogels at the Fireside Chat event"
+      loading="lazy"
+    >
+    <figcaption>
       Figure 1 - Speaker Dr. Werner Vogels
     </figcaption>
   </figure>
 
-  <figure style="margin: 0; text-align: center;">
-    <div style="height: 320px; display: flex; align-items: center; justify-content: center; background: #f5f7fa; border-radius: 8px; overflow: hidden;">
-      <img
-        src="/NguyenMinhPhuong_Workshop/images/speakerev1.jpg"
-        alt="The speaker sharing insights and interacting with the audience"
-        style="width: 100%; height: 100%; object-fit: contain;"
-      >
-    </div>
-    <figcaption style="margin-top: 12px; font-weight: bold; color: #232f3e;">
+  <figure class="event-photo">
+    <img
+      src="/NguyenMinhPhuong_Workshop/images/speakerev1.jpg"
+      alt="The speaker sharing insights and interacting with the audience"
+      loading="lazy"
+    >
+    <figcaption>
       Figure 2 - The speaker sharing insights and interacting with the audience
     </figcaption>
   </figure>
 
-</div>
+  <figure class="event-photo">
+    <img
+      src="/NguyenMinhPhuong_Workshop/images/event1.jpg"
+      alt="Attending the Fireside Chat with Dr. Werner Vogels event"
+      loading="lazy"
+    >
+    <figcaption>
+      Figure 3 - Attending the event to listen to and learn valuable knowledge from the speaker
+    </figcaption>
+  </figure>
 
-<figure style="margin: 35px auto 0; text-align: center; max-width: 750px;">
-  <img
-    src="/NguyenMinhPhuong_Workshop/images/event1.jpg"
-    alt="Attending the Fireside Chat with Dr. Werner Vogels event"
-    style="width: 75%; height: auto; border-radius: 8px;"
-  >
-  <figcaption style="margin-top: 12px; font-weight: bold; color: #232f3e;">
-    Figure 3 - Attending the event to listen to and learn valuable knowledge from the speaker
-  </figcaption>
-</figure>
+</div>
