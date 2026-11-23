@@ -27,7 +27,7 @@ The internship worklog covers approximately three months, from September to Dece
 
 **Week 9:** [Spending Analysis Reports & AI Insight Chatbot UI (16/11/2026 – 20/11/2026)](1.9-week9/)
 
-**Week 10:** [Upcoming Internship Activities](1.10-week10/)
+**Week 10:** [AWS IoT Core, Lambda, API Gateway, Glue ETL & Scalable E-Commerce Architecture (23/11/2026 – 27/11/2026)](1.10-week10/)
 
 **Week 11:** [Upcoming Internship Activities](1.11-week11/)
 
