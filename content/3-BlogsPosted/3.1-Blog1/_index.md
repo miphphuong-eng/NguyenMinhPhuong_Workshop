@@ -1,5 +1,10 @@
-
-# Blog 1
+---
+title: "Blog 1"
+date: 2026-11-23
+weight: 1
+chapter: false
+pre: "<b> 3.1. </b>"
+---
 
 # BUILDING A CI/CD PIPELINE ON AWS: INTEGRATING DEVSECOPS TO PERFORM SECURITY CHECKS BEFORE PRODUCTION DEPLOYMENT
 
