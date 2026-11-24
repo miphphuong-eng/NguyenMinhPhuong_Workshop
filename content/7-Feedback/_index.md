@@ -6,14 +6,6 @@ chapter: false
 pre: "<b> 7. </b>"
 ---
 
----
-title: "Sharing and Feedback"
-date: 2026-11-24
-weight: 6
-chapter: false
-pre: "<b> 6. </b>"
----
-
 # SHARING AND FEEDBACK
 
 ## I. General Evaluation
