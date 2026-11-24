@@ -6,8 +6,6 @@ chapter: false
 pre: "<b> 7. </b>"
 ---
 
-# CHIA SẺ, ĐÓNG GÓP Ý KIẾN
-
 ## I. Đánh giá chung
 
 ### 1. Môi trường làm việc
