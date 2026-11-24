@@ -28,3 +28,17 @@ During my internship, I participated in three events. Each one was a memorable e
 &emsp;**Location:** 26th Floor, Bitexco Tower, Ho Chi Minh City, Vietnam
 
 &emsp;**Role:** Attendee
+
+---
+
+### [Event 3](4.3-Event3/)
+
+&emsp;**Event Name:** Smart Plushies for Children
+
+&emsp;**Date & Time:** Monday, October 26, 2026, 1:30 PM – 3:30 PM
+
+&emsp;**Location:** EC2, 36th Floor, HCMC Office, Ho Chi Minh City, Vietnam
+
+&emsp;**Organization:** Operation Smile Vietnam
+
+&emsp;**Role:** Attendee and Volunteer
