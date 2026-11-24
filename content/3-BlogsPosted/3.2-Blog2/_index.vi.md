@@ -1,171 +1,407 @@
+
 ---
-title: "Blog 1"
-date: 2026-11-23
-weight: 1
+title: "Blog 2"
+date: 2026-11-24
+weight: 2
 chapter: false
-pre: "<b> 3.1. </b>"
+pre: "<b> 3.2. </b>"
 ---
 
-# XÂY DỰNG CI/CD PIPELINE TRÊN AWS: TÍCH HỢP DEVSECOPS ĐỂ KIỂM TRA BẢO MẬT TRƯỚC KHI TRIỂN KHAI PRODUCTION
+# AMAZON S3 – GIẢI PHÁP LƯU TRỮ VÀ BẢO MẬT DỮ LIỆU TRÊN AWS
 
-Trong quá trình phát triển phần mềm hiện đại, việc triển khai mã nguồn lên môi trường Production một cách nhanh chóng là chưa đủ. Một ứng dụng có thể hoạt động bình thường nhưng vẫn tồn tại các lỗ hổng bảo mật, thư viện bên thứ ba có nguy cơ mất an toàn hoặc cấu hình AWS chưa được bảo vệ đúng cách.
+Trong thời đại chuyển đổi số, dữ liệu đóng vai trò thiết yếu trong hoạt động của doanh nghiệp và các hệ thống công nghệ thông tin hiện đại. Từ website, ứng dụng di động cho đến các hệ thống Trí tuệ nhân tạo (AI), hầu hết các ứng dụng ngày nay đều cần một giải pháp lưu trữ an toàn, linh hoạt và có khả năng mở rộng.
 
-Nếu các bước kiểm tra bảo mật chỉ được thực hiện sau khi ứng dụng đã triển khai, việc phát hiện và khắc phục vấn đề có thể mất nhiều thời gian hơn, làm tăng chi phí và thậm chí ảnh hưởng đến hoạt động của hệ thống.
+Tuy nhiên, khi lượng dữ liệu ngày càng tăng, các hệ thống lưu trữ truyền thống có thể gặp nhiều thách thức như chi phí đầu tư phần cứng, giới hạn dung lượng, khó khăn trong việc mở rộng và chi phí bảo trì hạ tầng.
 
-Một giải pháp hiệu quả là tích hợp **DevSecOps** vào CI/CD Pipeline trên AWS. Phương pháp này đưa các bước kiểm tra bảo mật vào xuyên suốt quá trình phát triển và triển khai, giúp đội ngũ phát hiện những rủi ro tiềm ẩn trước khi ứng dụng được đưa lên môi trường Production.
+Để giải quyết những vấn đề này, Amazon Web Services (AWS) cung cấp **Amazon Simple Storage Service (Amazon S3)**. Đây là dịch vụ lưu trữ đối tượng (Object Storage), cho phép người dùng lưu trữ và truy xuất dữ liệu với khả năng mở rộng linh hoạt.
 
-### Tổng quan kiến trúc (Architecture Overview)
+Trong bài viết này, chúng ta sẽ tìm hiểu Amazon S3 là gì, các lớp lưu trữ (Storage Classes), những tính năng quan trọng trong quản lý và bảo mật dữ liệu, cũng như cách S3 được ứng dụng trong kiến trúc Data & Machine Learning trên AWS.
 
-Kiến trúc CI/CD tích hợp DevSecOps sử dụng nhiều dịch vụ AWS để tự động hóa quá trình build ứng dụng, kiểm thử bảo mật, triển khai và giám sát hệ thống.
+### 1. Amazon S3 là gì?
 
-Các thành phần chính bao gồm:
+Amazon Simple Storage Service (Amazon S3) là dịch vụ lưu trữ đối tượng được cung cấp bởi Amazon Web Services.
 
-- **Git:** Quản lý mã nguồn và ghi nhận những thay đổi do lập trình viên thực hiện.
-- **AWS CodePipeline:** Điều phối toàn bộ quy trình CI/CD.
-- **AWS CodeCommit:** Lưu trữ repository chứa mã nguồn của ứng dụng.
-- **AWS CodeBuild:** Build ứng dụng và thực hiện các bước kiểm tra bảo mật.
-- **AWS CodeDeploy:** Triển khai ứng dụng lên môi trường mục tiêu.
-- **Amazon S3 & AWS CodeArtifact:** Lưu trữ các build artifact và dependency cần thiết trong quá trình build và triển khai.
-- **AWS Lambda:** Phân tích kết quả quét bảo mật và hỗ trợ xử lý các phát hiện bảo mật.
-- **AWS Security Hub:** Tập trung các phát hiện bảo mật từ nhiều nguồn khác nhau.
-- **AWS Config:** Theo dõi và đánh giá cấu hình các tài nguyên AWS.
-- **Amazon ECS:** Vận hành ứng dụng trong môi trường Staging và Production.
+Amazon S3 cho phép người dùng lưu trữ và truy xuất dữ liệu thông qua Internet, AWS Management Console, AWS CLI và các API được hỗ trợ mà không cần trực tiếp quản lý hạ tầng lưu trữ vật lý.
 
-### Quy trình CI/CD tích hợp DevSecOps
+Dữ liệu được lưu trữ trên Amazon S3 có thể bao gồm:
 
-Quy trình được chia thành nhiều giai đoạn nhằm đảm bảo ứng dụng được kiểm tra đầy đủ trước khi phát hành lên môi trường Production.
+- Hình ảnh và video.
+- Tài liệu PDF, Word và Excel.
+- Các tệp sao lưu dữ liệu (Backup).
+- Bộ dữ liệu phục vụ Machine Learning và Artificial Intelligence.
+- Tệp website tĩnh như HTML, CSS và JavaScript.
+- Log hệ thống và dữ liệu phục vụ phân tích.
 
-**1. Commit – Đẩy mã nguồn lên Git**
+Một trong những ưu điểm nổi bật của Amazon S3 là khả năng mở rộng theo nhu cầu lưu trữ. Thay vì phải mua thêm ổ cứng hoặc máy chủ khi dung lượng dữ liệu tăng lên, người dùng có thể sử dụng hạ tầng lưu trữ do AWS quản lý và thanh toán dựa trên mức sử dụng thực tế.
 
-Khi lập trình viên hoàn thành một thay đổi trong mã nguồn, các thay đổi sẽ được commit và đẩy lên repository.
+Ngoài ra, S3 Standard được thiết kế để cung cấp độ bền dữ liệu (Data Durability) lên đến 99.999999999% (11 số 9). Đây là chỉ số về độ bền dữ liệu, không phải cam kết dịch vụ luôn sẵn sàng 100%.
 
-- Git ghi nhận những thay đổi được thực hiện trong mã nguồn.
-- AWS CodePipeline nhận sự kiện từ repository để kích hoạt pipeline.
-- Các giai đoạn build và kiểm thử được tự động thực hiện.
+### 2. Các thành phần cơ bản của Amazon S3
 
-**2. Build & Security Scan – Kiểm tra mã nguồn**
+Để hiểu cách Amazon S3 hoạt động, chúng ta cần nắm rõ ba khái niệm quan trọng: Bucket, Object và Object Key.
 
-AWS CodeBuild tiến hành build ứng dụng và tích hợp các công cụ kiểm thử bảo mật vào quy trình.
+**2.1. Bucket**
 
-Hai phương pháp kiểm tra bảo mật quan trọng bao gồm:
+Bucket là một vùng chứa được sử dụng để lưu trữ các Object trong Amazon S3.
 
-- **SCA (Software Composition Analysis):**
-  - Kiểm tra các thư viện bên thứ ba và những dependency mà ứng dụng đang sử dụng.
-  - Phát hiện các phiên bản dependency đã được ghi nhận có lỗ hổng bảo mật hoặc tiềm ẩn rủi ro.
-- **SAST (Static Application Security Testing):**
-  - Phân tích mã nguồn mà không cần thực thi ứng dụng.
-  - Phát hiện những đoạn mã hoặc cách viết code có thể tạo ra điểm yếu bảo mật.
+Có thể hiểu Bucket giống như một khu vực lưu trữ riêng dành cho dữ liệu của một ứng dụng hoặc hệ thống.
 
-Trong kiến trúc minh họa, các công cụ được sử dụng bao gồm Black Duck và SonarQube.
+Ví dụ, một ứng dụng quản lý hình ảnh có thể sử dụng Bucket với tên:
 
-**3. Deploy – Triển khai lên môi trường Staging**
+`my-image-storage-demo`
 
-Sau khi hoàn thành bước build ban đầu và các kiểm tra bảo mật, ứng dụng được triển khai lên môi trường Staging.
+Bên trong Bucket này, người dùng có thể lưu trữ ảnh đại diện, hình ảnh sản phẩm, tài liệu và nhiều loại dữ liệu khác.
 
-- AWS CodeDeploy quản lý quá trình triển khai.
-- Amazon ECS cung cấp môi trường để ứng dụng hoạt động.
-- Staging đóng vai trò là môi trường kiểm thử trước khi ứng dụng được phát hành lên Production.
+Khi tạo một S3 Bucket, người dùng cần lựa chọn AWS Region phù hợp với vị trí lưu trữ dữ liệu và yêu cầu của hệ thống.
 
-**4. Test – Kiểm thử bảo mật trong quá trình chạy ứng dụng**
+**2.2. Object**
 
-Sau khi triển khai lên Staging, hệ thống tiếp tục thực hiện các bước kiểm tra bảo mật trong khi ứng dụng đang hoạt động.
+Object là một đơn vị dữ liệu riêng lẻ được lưu trữ trong Amazon S3.
 
-- **DAST (Dynamic Application Security Testing):**
-  - Kiểm tra ứng dụng đang chạy bằng cách gửi các request và phân tích response nhận được.
-  - Phát hiện những lỗ hổng có thể xuất hiện trong quá trình ứng dụng thực thi.
-- **IAST (Interactive Application Security Testing):**
-  - Phân tích hành vi của ứng dụng trong quá trình thực thi.
-  - Hỗ trợ phát hiện các vấn đề bảo mật dựa trên thông tin được thu thập khi ứng dụng đang hoạt động.
+Mỗi Object thường bao gồm dữ liệu thực tế của tệp và các thông tin mô tả liên quan (Metadata).
 
-Trong kiến trúc minh họa, các công cụ được sử dụng bao gồm Appknox và Veracode.
+Một số ví dụ:
 
-**5. Manual Approval & Production Deployment – Phê duyệt thủ công và triển khai Production**
+- `avatar.jpg`
+- `report.pdf`
+- `dataset.csv`
+- `backup.zip`
 
-Trước khi ứng dụng được phát hành chính thức, kết quả kiểm thử cần được tổng hợp và đánh giá.
+Khác với hệ thống lưu trữ dựa trên ổ đĩa truyền thống, Amazon S3 sử dụng mô hình Object Storage, trong đó dữ liệu được truy cập thông qua API và các định danh Object.
 
-- Kiểm tra các vấn đề bảo mật và cảnh báo đã được phát hiện.
-- Đánh giá mức độ rủi ro và xác định những vấn đề cần khắc phục.
-- Yêu cầu Manual Approval trước khi tiếp tục triển khai lên Production.
-- Nếu ứng dụng đáp ứng các điều kiện cần thiết, AWS CodeDeploy sẽ triển khai ứng dụng lên Amazon ECS trong môi trường Production.
+**2.3. Object Key**
 
-Việc bổ sung bước phê duyệt thủ công giúp đội ngũ phát triển và bảo mật kiểm soát tốt hơn quá trình phát hành ứng dụng.
+Object Key là định danh duy nhất của một Object bên trong một Bucket.
 
-### Giám sát và kiểm soát bảo mật (Security Monitoring and Control)
+Ví dụ:
 
-Bên cạnh việc kiểm tra mã nguồn và ứng dụng, hệ thống cần có các cơ chế giám sát để theo dõi hoạt động và phát hiện những thay đổi bất thường.
+`images/profile/avatar.jpg`
 
-Một số dịch vụ AWS hỗ trợ quá trình này bao gồm:
+Trong trường hợp này, `images/profile/avatar.jpg` chính là Object Key.
 
-- **AWS CloudTrail:** Ghi lại các hoạt động API và những thay đổi được thực hiện trong tài khoản AWS.
-- **AWS Config:** Theo dõi cấu hình tài nguyên và xác định những thay đổi không đáp ứng các yêu cầu đã đặt ra.
-- **AWS Security Hub:** Tổng hợp các phát hiện bảo mật từ nhiều dịch vụ để hỗ trợ đánh giá rủi ro.
-- **AWS Lambda:** Phân tích kết quả quét và hỗ trợ tự động hóa việc xử lý một số phát hiện bảo mật.
-- **Amazon CloudWatch Logs & Events:** Theo dõi log, sự kiện và trạng thái thực thi của pipeline.
+Mặc dù cấu trúc đặt tên này trông giống đường dẫn thư mục truyền thống, Amazon S3 chủ yếu sử dụng các tiền tố (Prefix) trong Object Key để tổ chức dữ liệu thay vì cấu trúc thư mục vật lý như trên máy tính.
 
-Việc kết hợp các dịch vụ này giúp đội ngũ DevOps và Security có cái nhìn tổng quan hơn về tình trạng bảo mật của hệ thống.
+Điều này giúp người dùng dễ dàng phân loại, tìm kiếm và quản lý dữ liệu.
 
-### Quản lý cấu hình và quyền truy cập (Configuration and Access Management)
+### 3. Các lớp lưu trữ của Amazon S3 (Storage Classes)
 
-Một CI/CD Pipeline an toàn không chỉ cần kiểm tra mã nguồn mà còn phải kiểm soát quyền truy cập và bảo vệ thông tin cấu hình của ứng dụng.
+Không phải tất cả dữ liệu đều cần được truy cập với tần suất giống nhau.
 
-Các thành phần quan trọng bao gồm:
+Ví dụ, hình ảnh sản phẩm trên website có thể được truy cập mỗi ngày, trong khi các tệp sao lưu từ nhiều năm trước chỉ được sử dụng khi hệ thống cần khôi phục.
 
-- **AWS IAM Role:**
-  - Cấp quyền cần thiết cho các dịch vụ AWS để thực hiện nhiệm vụ của mình.
-  - Áp dụng nguyên tắc Least Privilege bằng cách chỉ cấp những quyền thực sự cần thiết.
-- **AWS Systems Manager Parameter Store:**
-  - Lưu trữ và quản lý các tham số cấu hình của ứng dụng.
-  - Hạn chế việc đưa trực tiếp thông tin cấu hình vào mã nguồn.
-- **Amazon S3:**
-  - Lưu trữ các artifact cần thiết cho quá trình build và triển khai.
-- **Amazon SNS (Simple Notification Service):**
-  - Gửi thông báo qua Email khi các hoạt động của pipeline hoặc quá trình kiểm tra bảo mật phát sinh sự kiện cần được chú ý.
+Amazon S3 cung cấp nhiều lớp lưu trữ (Storage Classes) để đáp ứng những nhu cầu sử dụng dữ liệu khác nhau.
 
-### Các tình huống cần kiểm thử (Scenarios to Validate)
+**3.1. Phân cấp lưu trữ của Amazon S3**
 
-Để đảm bảo pipeline hoạt động đúng như mong đợi, cần kiểm thử một số tình huống thực tế:
+Các Storage Classes của Amazon S3 có thể được phân nhóm dựa trên tần suất truy cập và yêu cầu truy xuất dữ liệu:
 
-- **Dependency có lỗ hổng bảo mật:** SCA phát hiện một thư viện không an toàn và đưa ra cảnh báo trước khi triển khai.
-- **Vấn đề bảo mật trong mã nguồn:** SAST phát hiện những vấn đề tiềm ẩn trong giai đoạn build.
-- **Lỗ hổng khi ứng dụng đang chạy:** DAST và IAST hỗ trợ phát hiện các vấn đề trong môi trường Staging.
-- **Cấu hình AWS không an toàn:** AWS Config ghi nhận những tài nguyên không đáp ứng yêu cầu cấu hình.
-- **Triển khai thất bại:** CloudWatch Logs hỗ trợ theo dõi và xác định nguyên nhân gây ra lỗi triển khai.
-- **Phát hiện rủi ro bảo mật:** Security Hub tập trung các phát hiện để đội ngũ DevOps và Security xem xét và xử lý.
+- **Frequently Accessed (Truy cập thường xuyên):** Dành cho dữ liệu được sử dụng thường xuyên và yêu cầu độ trễ truy cập thấp.
+- **Infrequently Accessed (Truy cập không thường xuyên):** Dành cho dữ liệu ít được sử dụng hơn nhưng vẫn cần truy xuất nhanh khi cần thiết.
+- **Archive (Lưu trữ dài hạn):** Dành cho dữ liệu ít khi truy cập và có thể chấp nhận thời gian khôi phục lâu hơn.
 
-Những tình huống này giúp đánh giá khả năng phát hiện, báo cáo và kiểm soát các rủi ro bảo mật của pipeline trong suốt quy trình hoạt động.
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/NguyenMinhPhuong_Workshop/images/s3-storage-hierarchy.png" alt="Phân cấp lưu trữ Amazon S3" style="width: 90%; max-width: 850px; border-radius: 8px;">
+  <p><em>Hình 1 - Phân cấp các lớp lưu trữ Amazon S3 dựa trên nhu cầu truy cập dữ liệu.</em></p>
+</div>
 
-### Những điều tôi học được (What I Learned)
+**3.2. Tổng quan về 8 lớp lưu trữ Amazon S3**
 
-Thông qua kiến trúc CI/CD tích hợp DevSecOps này, tôi hiểu rõ hơn rằng bảo mật cần được xem là một phần thiết yếu trong quá trình phát triển phần mềm, thay vì chỉ là bước kiểm tra cuối cùng trước khi phát hành.
+Amazon S3 cung cấp nhiều lớp lưu trữ khác nhau để người dùng lựa chọn tùy theo nhu cầu sử dụng.
+
+| Storage Class | Đặc điểm | Trường hợp sử dụng phổ biến |
+|---|---|---|
+| S3 Standard | Thiết kế cho dữ liệu được truy cập thường xuyên | Website, hình ảnh, dữ liệu ứng dụng |
+| S3 Intelligent-Tiering | Tự động tối ưu lớp lưu trữ dựa trên mô hình truy cập dữ liệu | Dữ liệu có tần suất truy cập khó dự đoán |
+| S3 Standard-IA | Dữ liệu ít truy cập nhưng vẫn cần truy xuất nhanh | Dữ liệu Backup và lưu trữ dài hạn |
+| S3 One Zone-IA | Lưu trữ dữ liệu trong một Availability Zone | Dữ liệu có thể tái tạo khi cần |
+| S3 Glacier Instant Retrieval | Dữ liệu ít truy cập nhưng vẫn cần truy xuất nhanh | Hình ảnh và hồ sơ lưu trữ dài hạn |
+| S3 Glacier Flexible Retrieval | Lưu trữ dài hạn với thời gian truy xuất linh hoạt | Backup và dữ liệu lưu trữ định kỳ |
+| S3 Glacier Deep Archive | Dành cho dữ liệu rất ít truy cập, cần lưu trữ trong nhiều năm | Hồ sơ lịch sử và dữ liệu lưu trữ dài hạn |
+| S3 Express One Zone | Lưu trữ hiệu năng cao trong một Availability Zone | Ứng dụng yêu cầu độ trễ truy cập dữ liệu rất thấp |
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/NguyenMinhPhuong_Workshop/images/s3-storage-classes.png" alt="Tổng quan 8 lớp lưu trữ Amazon S3" style="width: 90%; max-width: 850px; border-radius: 8px;">
+  <p><em>Hình 2 - Tổng quan tám lớp lưu trữ Amazon S3 và các trường hợp sử dụng phổ biến.</em></p>
+</div>
+
+Một số lưu ý quan trọng khi lựa chọn Storage Class:
+
+- S3 Standard phù hợp với dữ liệu được truy cập thường xuyên.
+- S3 Intelligent-Tiering hữu ích khi không thể dự đoán chính xác tần suất truy cập dữ liệu.
+- S3 Standard-IA và One Zone-IA phù hợp với dữ liệu ít truy cập nhưng vẫn cần truy xuất nhanh.
+- S3 Glacier Instant Retrieval phù hợp với dữ liệu lưu trữ dài hạn nhưng vẫn cần truy cập gần như ngay lập tức.
+- S3 Glacier Flexible Retrieval và Deep Archive phù hợp với dữ liệu lưu trữ dài hạn, có thể chấp nhận thời gian truy xuất lâu hơn.
+- S3 Express One Zone phù hợp với các ứng dụng yêu cầu độ trễ truy cập dữ liệu rất thấp.
+
+Việc lựa chọn Storage Class phù hợp có thể giúp tối ưu chi phí. Tuy nhiên, người dùng cũng cần cân nhắc phí truy xuất dữ liệu, phí yêu cầu API, thời gian lưu trữ tối thiểu và yêu cầu khôi phục dữ liệu.
+
+Đặc biệt, S3 One Zone-IA và S3 Express One Zone lưu trữ dữ liệu trong một Availability Zone duy nhất. Vì vậy, cần đánh giá kỹ yêu cầu về tính sẵn sàng và khả năng chịu lỗi trước khi sử dụng hai lớp lưu trữ này.
+
+### 4. Những tính năng quan trọng của Amazon S3
+
+Ngoài khả năng lưu trữ, Amazon S3 còn cung cấp nhiều tính năng hỗ trợ quản lý vòng đời dữ liệu và tăng cường bảo mật.
+
+**4.1. S3 Versioning**
+
+S3 Versioning là tính năng cho phép lưu trữ nhiều phiên bản của cùng một Object trong một Bucket.
+
+Ví dụ, một tệp có tên:
+
+`project-report.pdf`
+
+Sau khi cập nhật nội dung báo cáo, người dùng tải lên phiên bản mới với cùng Object Key.
+
+Khi Versioning được bật, S3 có thể giữ lại cả phiên bản cũ và phiên bản mới.
+
+Tính năng này đặc biệt hữu ích trong các trường hợp:
+
+- Dữ liệu bị ghi đè ngoài ý muốn.
+- Object bị xóa nhầm.
+- Cần khôi phục lại phiên bản trước đó.
+- Cần theo dõi những thay đổi của dữ liệu đã lưu trữ.
+
+Tuy nhiên, các phiên bản cũ vẫn có thể phát sinh chi phí lưu trữ. Vì vậy, nên kết hợp Versioning với Lifecycle Rules để quản lý dữ liệu hiệu quả hơn.
+
+**4.2. S3 Lifecycle Rules**
+
+S3 Lifecycle Rules cho phép người dùng tự động quản lý vòng đời của các Object dựa trên những quy tắc được thiết lập trước.
+
+Ví dụ, một hệ thống lưu trữ log có thể áp dụng chính sách như sau:
+
+- Trong 30 ngày đầu: Lưu trữ dữ liệu bằng S3 Standard.
+- Sau 30 ngày: Chuyển dữ liệu sang Storage Class phù hợp với nhu cầu truy cập ít thường xuyên hơn.
+- Sau khi hết thời hạn lưu trữ: Tự động xóa dữ liệu theo chính sách đã cấu hình.
+
+Thông qua Lifecycle Rules, doanh nghiệp có thể giảm các thao tác quản lý thủ công và tối ưu chi phí lưu trữ.
+
+**4.3. S3 Encryption**
+
+Bảo mật dữ liệu là một trong những yếu tố quan trọng nhất khi sử dụng dịch vụ Cloud Storage.
+
+Amazon S3 hỗ trợ mã hóa dữ liệu nhằm bảo vệ thông tin khi dữ liệu được lưu trữ (Encryption at Rest).
+
+Một số phương thức mã hóa phổ biến bao gồm:
+
+- **SSE-S3:** Amazon S3 quản lý khóa mã hóa. Đây là phương thức mã hóa mặc định đối với các Object mới được tải lên S3.
+- **SSE-KMS:** Sử dụng AWS Key Management Service (AWS KMS) để quản lý khóa mã hóa và cung cấp thêm khả năng kiểm soát.
+- **SSE-C:** Người dùng cung cấp khóa mã hóa trong các request, trong khi Amazon S3 thực hiện quá trình mã hóa và giải mã dữ liệu.
+
+Phương thức mã hóa phù hợp sẽ phụ thuộc vào yêu cầu bảo mật và chính sách quản lý khóa của tổ chức.
+
+**4.4. S3 Block Public Access**
+
+Một trong những rủi ro bảo mật phổ biến khi sử dụng Cloud Storage là vô tình cho phép truy cập công khai vào dữ liệu riêng tư.
+
+Amazon S3 cung cấp tính năng Block Public Access nhằm hạn chế những cấu hình có thể khiến Bucket hoặc Object bị công khai ngoài ý muốn.
+
+Tính năng này hỗ trợ kiểm soát:
+
+- Public ACLs.
+- Public Bucket Policies.
+- Những cấu hình có thể cho phép truy cập công khai.
+
+Đối với các Bucket mới được tạo, các thiết lập Block Public Access được bật mặc định.
+
+**Khuyến nghị:** Nên giữ Block Public Access luôn được bật, trừ khi có yêu cầu cụ thể và các rủi ro bảo mật liên quan đã được đánh giá đầy đủ.
+
+Đối với các ứng dụng cần phân phối hình ảnh hoặc dữ liệu cho người dùng bên ngoài, có thể cân nhắc sử dụng Amazon CloudFront kết hợp Origin Access Control hoặc Presigned URLs.
+
+### 5. Hướng dẫn cơ bản: Tạo và quản lý Amazon S3 Bucket
+
+Sau khi tìm hiểu các khái niệm, chúng ta có thể thực hành tạo một Bucket và tải dữ liệu lên Amazon S3.
+
+**Yêu cầu:** Có tài khoản AWS hoặc môi trường AWS được cấp quyền sử dụng Amazon S3.
+
+**Bước 1: Truy cập AWS Management Console**
+
+- Đăng nhập vào AWS Management Console.
+- Tìm kiếm dịch vụ Amazon S3.
+- Chọn mục Buckets để xem danh sách các Bucket hiện có.
+
+**Bước 2: Tạo S3 Bucket**
+
+Chọn Create bucket và nhập các thông tin cần thiết:
+
+- **Bucket name:** Nhập tên duy nhất theo quy tắc đặt tên của S3.
+- **AWS Region:** Chọn khu vực lưu trữ phù hợp.
+- **Object Ownership:** Giữ thiết lập mặc định nếu không có yêu cầu đặc biệt.
+- **Block Public Access:** Giữ trạng thái bật để tránh vô tình công khai dữ liệu.
+- **Versioning:** Có thể bật tùy chọn này để tìm hiểu cách quản lý nhiều phiên bản Object.
+
+Sau khi kiểm tra lại cấu hình, chọn Create bucket.
+
+**Bước 3: Tải dữ liệu lên Bucket**
+
+- Mở Bucket vừa tạo.
+- Chọn Upload.
+- Chọn một tệp thử nghiệm không chứa thông tin cá nhân hoặc dữ liệu nhạy cảm, ví dụ `demo.txt`.
+- Chọn Upload để bắt đầu quá trình tải lên.
+
+Sau khi tải lên thành công, Object sẽ xuất hiện trong danh sách dữ liệu của Bucket.
+
+**Bước 4: Kiểm tra thông tin Object**
+
+Chọn Object vừa tải lên để xem các thông tin:
+
+- Object Key.
+- Object Size.
+- Storage Class.
+- Metadata.
+- Encryption.
+- Version ID nếu Versioning được bật.
+
+**Bước 5: Kiểm tra quyền truy cập**
+
+Nếu Block Public Access được bật, việc có URL của Object không đồng nghĩa với việc mọi người trên Internet đều có thể truy cập dữ liệu.
+
+Người dùng cần có quyền phù hợp thông qua IAM Policies, Bucket Policies hoặc các cơ chế truy cập được cấp phép khác.
+
+Đây là một khái niệm quan trọng cần ghi nhớ khi phát triển ứng dụng sử dụng Amazon S3.
+
+**Bước 6: Dọn dẹp tài nguyên thử nghiệm**
+
+Sau khi hoàn thành thực hành:
+
+- Xóa các Object thử nghiệm không còn cần thiết.
+- Kiểm tra các phiên bản cũ nếu Versioning được bật.
+- Kiểm tra Delete Markers.
+- Xóa Bucket sau khi đã xóa toàn bộ dữ liệu bên trong.
+
+Việc dọn dẹp tài nguyên giúp tránh phát sinh các chi phí lưu trữ không cần thiết.
+
+**Lưu ý:** Chỉ thực hiện những thao tác này trong môi trường AWS được cấp quyền và cần kiểm tra kỹ dữ liệu trước khi xóa.
+
+### 6. Ứng dụng thực tế: Amazon S3 trong kiến trúc Data & Machine Learning
+
+Ngoài những ứng dụng lưu trữ thông thường, Amazon S3 còn đóng vai trò quan trọng trong các hệ thống xử lý dữ liệu và Machine Learning.
+
+Ví dụ, một doanh nghiệp muốn xây dựng hệ thống AI có khả năng nhận diện và phân loại hình ảnh.
+
+Trong trường hợp này, Amazon S3 có thể được sử dụng để lưu trữ dữ liệu đầu vào, bộ dữ liệu huấn luyện, mô hình và kết quả xử lý.
+
+Một cấu trúc dữ liệu mẫu có thể được tổ chức như sau:
+
+```text
+my-ai-dataset/
+|
+|-- raw-data/
+|   |-- image_001.jpg
+|   |-- image_002.jpg
+|
+|-- processed-data/
+|   |-- image_001_processed.jpg
+|
+|-- train/
+|   |-- training-data.csv
+|
+|-- validation/
+|   |-- validation-data.csv
+|
+|-- models/
+|   |-- model_v1.pth
+|
+|-- results/
+    |-- predictions.csv
+```
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/NguyenMinhPhuong_Workshop/images/aws-data-ml-architecture.png" alt="Kiến trúc Data và Machine Learning trên AWS Cloud" style="width: 90%; max-width: 850px; border-radius: 8px;">
+  <p><em>Hình 3 - Kiến trúc Data & Machine Learning trên AWS Cloud sử dụng Amazon S3 để lưu trữ và quản lý dữ liệu.</em></p>
+</div>
+
+Trong kiến trúc này, các thành phần có thể phối hợp với nhau như sau:
+
+- **Amazon S3:** Lưu trữ dữ liệu thô, dữ liệu đã xử lý, bộ dữ liệu huấn luyện và kết quả đầu ra.
+- **AWS Glue:** Hỗ trợ khám phá, chuẩn bị và xử lý dữ liệu.
+- **Amazon SageMaker:** Hỗ trợ xây dựng, huấn luyện và triển khai các mô hình Machine Learning.
+- **AWS Lambda:** Có thể kích hoạt các tác vụ xử lý khi có Object mới được tải lên S3.
+- **Amazon CloudWatch:** Giám sát hoạt động hệ thống và trạng thái của các thành phần.
+
+Ví dụ, khi người dùng tải một hình ảnh mới lên S3, một sự kiện có thể kích hoạt AWS Lambda để bắt đầu tác vụ xử lý dữ liệu. Dữ liệu sau khi xử lý có thể được sử dụng trong quy trình huấn luyện hoặc dự đoán bằng Amazon SageMaker.
+
+Sau khi quá trình hoàn tất, mô hình và kết quả dự đoán có thể được lưu ngược lại Amazon S3 để phục vụ việc đánh giá và sử dụng trong tương lai.
+
+Điều quan trọng cần hiểu là Amazon S3 không trực tiếp thực hiện quá trình huấn luyện mô hình AI. S3 cung cấp lớp lưu trữ dữ liệu, trong khi các tác vụ xử lý và huấn luyện được thực hiện bởi những dịch vụ tính toán phù hợp.
+
+### 7. Những lưu ý quan trọng khi sử dụng Amazon S3
+
+Để sử dụng Amazon S3 hiệu quả, cần quan tâm đến một số yếu tố sau:
+
+**Bảo mật dữ liệu:**
+
+- Tránh công khai các Bucket chứa dữ liệu riêng tư.
+- Áp dụng nguyên tắc Least Privilege khi cấp quyền IAM.
+- Sử dụng Encryption để bảo vệ dữ liệu được lưu trữ.
+- Thường xuyên kiểm tra Bucket Policies và các thiết lập Block Public Access.
+
+**Tối ưu chi phí:**
+
+- Lựa chọn Storage Class dựa trên tần suất truy cập thực tế.
+- Sử dụng Lifecycle Rules để tự động chuyển đổi lớp lưu trữ.
+- Theo dõi chi phí request, retrieval và data transfer.
+- Kiểm tra các phiên bản Object cũ khi Versioning được bật.
+
+**Quản lý dữ liệu:**
+
+- Tổ chức Object Keys theo cấu trúc đặt tên rõ ràng.
+- Bật Versioning khi cần khả năng khôi phục dữ liệu.
+- Thiết lập chính sách lưu trữ và xóa dữ liệu phù hợp.
+
+**Thiết kế hệ thống:**
+
+- Lựa chọn AWS Region phù hợp.
+- Xác định yêu cầu về độ trễ và tính sẵn sàng.
+- Tích hợp Amazon S3 với các dịch vụ AWS khác khi xây dựng hệ thống Data & AI.
+
+### 8. Những điều tôi học được (What I Learned)
+
+Thông qua việc tìm hiểu Amazon S3, tôi hiểu rõ hơn vai trò của Cloud Storage trong quá trình xây dựng và vận hành các hệ thống công nghệ hiện đại.
 
 Một số bài học quan trọng bao gồm:
 
-- Tích hợp SCA và SAST vào giai đoạn build để phát hiện sớm các vấn đề liên quan đến dependency và mã nguồn.
-- Sử dụng DAST và IAST để kiểm tra ứng dụng trong môi trường đang thực thi.
-- Triển khai ứng dụng lên Staging trước khi phát hành chính thức lên Production.
-- Bổ sung Manual Approval để kiểm soát những thay đổi quan trọng trước khi phát hành.
-- Kết hợp Security Hub, AWS Config và CloudTrail để cải thiện khả năng giám sát và kiểm soát bảo mật.
-- Áp dụng nguyên tắc IAM Least Privilege để hạn chế những quyền truy cập không cần thiết.
+- Hiểu cách Amazon S3 tổ chức dữ liệu thông qua Bucket, Object và Object Key.
+- Phân biệt các Storage Classes và lựa chọn lớp lưu trữ phù hợp với nhu cầu truy cập.
+- Hiểu cách Versioning hỗ trợ khôi phục dữ liệu khi xảy ra sự cố ngoài ý muốn.
+- Sử dụng Lifecycle Rules để tự động quản lý vòng đời dữ liệu và tối ưu chi phí lưu trữ.
+- Hiểu vai trò của Encryption và Block Public Access trong việc bảo vệ dữ liệu.
+- Biết cách tạo Bucket, tải Object và kiểm tra thông tin dữ liệu thông qua AWS Management Console.
+- Hiểu cách Amazon S3 tích hợp trong kiến trúc Data & Machine Learning.
 
-Điều quan trọng nhất tôi rút ra được là DevSecOps chuyển cách tiếp cận bảo mật từ việc kiểm tra sau khi triển khai sang việc kiểm tra liên tục trong suốt vòng đời phát triển phần mềm.
+Bài học quan trọng nhất tôi rút ra được là lựa chọn một dịch vụ lưu trữ không chỉ đơn giản là tìm nơi để lưu dữ liệu. Chúng ta còn cần quan tâm đến cách dữ liệu được truy cập, bảo vệ, quản lý và tối ưu trong suốt vòng đời của nó.
 
-Nhờ đó, tổ chức có thể phát hiện lỗ hổng sớm hơn, giảm thiểu các rủi ro tiềm ẩn và cải thiện độ tin cậy của ứng dụng trước khi phát hành lên môi trường Production.
+Amazon S3 là một dịch vụ nền tảng quan trọng giúp xây dựng kiến thức về Cloud Computing và tìm hiểu những kiến trúc AWS nâng cao hơn.
 
-### Hình ảnh (Images)
+### 9. Kết luận (Conclusion)
 
-Hình ảnh dưới đây minh họa kiến trúc AWS CI/CD Pipeline tích hợp các công cụ và dịch vụ DevSecOps nhằm thực hiện kiểm tra bảo mật, giám sát và kiểm soát trước khi triển khai ứng dụng lên môi trường Production.
+Amazon S3 là một trong những dịch vụ lưu trữ nền tảng được cung cấp bởi Amazon Web Services.
 
-<div style="text-align: center; margin: 20px 0;">
-  <img src="/NguyenMinhPhuong_Workshop/images/aws-devsecops-cicd-pipeline.jpg" alt="AWS CI/CD Pipeline tích hợp DevSecOps" style="width: 90%; max-width: 850px; border-radius: 8px;">
-  <p><em>Hình 1 - AWS CI/CD Pipeline tích hợp DevSecOps để kiểm tra bảo mật trước khi triển khai Production</em></p>
-</div>
+Với mô hình Object Storage, khả năng mở rộng, nhiều Storage Classes và các tính năng như Versioning, Lifecycle Rules, Encryption và Block Public Access, Amazon S3 có thể đáp ứng nhiều nhu cầu lưu trữ khác nhau, từ dữ liệu ứng dụng được truy cập thường xuyên đến các bộ dữ liệu cần được lưu trữ trong nhiều năm.
 
-### Tài liệu tham khảo (References)
+Thông qua việc tìm hiểu và thực hành với Amazon S3, chúng ta có thể hiểu rõ hơn cách dữ liệu được tổ chức, lưu trữ, quản lý và bảo vệ trong môi trường Cloud Computing.
 
-1. AWS CodePipeline: https://docs.aws.amazon.com/codepipeline/
-2. AWS CodeBuild: https://docs.aws.amazon.com/codebuild/
-3. AWS CodeDeploy: https://docs.aws.amazon.com/codedeploy/
-4. AWS Security Hub: https://docs.aws.amazon.com/securityhub/
-5. AWS Config: https://docs.aws.amazon.com/config/
-6. AWS CloudTrail: https://docs.aws.amazon.com/cloudtrail/
-7. Amazon ECS: https://docs.aws.amazon.com/ecs/
+**Câu hỏi thảo luận:** Khi thiết kế một hệ thống lưu trữ lượng dữ liệu lớn, chúng ta cần cân nhắc những yếu tố nào khi lựa chọn giữa S3 Standard, S3 Intelligent-Tiering và các lớp lưu trữ S3 Glacier?
+
+Tôi rất mong được trao đổi ý kiến và học hỏi thêm từ cộng đồng AWS Study Group!
+
+### 10. Tài liệu tham khảo (References)
+
+1. AWS Documentation – Amazon S3 là gì?
+   https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html
+
+2. AWS Documentation – Các lớp lưu trữ Amazon S3
+   https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html
+
+3. AWS Documentation – Quản lý vòng đời của Object
+   https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html
+
+4. AWS Documentation – Sử dụng Versioning trong S3 Bucket
+   https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html
+
+5. AWS Documentation – Bảo vệ dữ liệu bằng Encryption
+   https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingEncryption.html
+
+6. AWS Documentation – Ngăn chặn truy cập công khai vào Amazon S3
+   https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html
+
+7. AWS Documentation – Amazon SageMaker
+   https://docs.aws.amazon.com/sagemaker/
