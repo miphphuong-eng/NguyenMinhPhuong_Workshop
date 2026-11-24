@@ -13,6 +13,6 @@ Bài viết trình bày cách xây dựng CI/CD Pipeline trên AWS kết hợp v
 
 Bài viết giới thiệu Amazon S3, dịch vụ lưu trữ đối tượng được cung cấp bởi AWS. Nội dung tập trung vào các khái niệm cơ bản như Bucket, Object và Object Key, cùng với tám lớp lưu trữ S3 và những trường hợp sử dụng phổ biến. Bên cạnh đó, bài viết còn trình bày các tính năng quan trọng như Versioning, Lifecycle Rules, Encryption và Block Public Access, cũng như cách Amazon S3 hỗ trợ lưu trữ và quản lý dữ liệu trong kiến trúc Data & Machine Learning.
 
-### [Blog 3 - Session Policies trong Amazon EKS Pod Identity](3.3-Blog3/)
+### [Blog 3 - Amazon EventBridge Scheduler: Một dịch vụ nhỏ nhưng có võ khi xây dựng Project trên AWS](3.3-Blog3/)
 
-Bài viết giới thiệu tính năng Session Policies mới được bổ sung trong Amazon EKS Pod Identity. Tính năng này cho phép giới hạn quyền IAM một cách linh hoạt và chính xác cho từng Pod mà không cần tạo nhiều IAM Role riêng biệt. Đây là một bước tiến quan trọng giúp áp dụng nguyên tắc Least Privilege hiệu quả hơn trong các môi trường Kubernetes quy mô lớn.
+Bài viết giới thiệu Amazon EventBridge Scheduler, một dịch vụ lập lịch Serverless cho phép ứng dụng tự động kích hoạt các dịch vụ AWS tại thời điểm xác định hoặc theo chu kỳ. Nội dung trình bày các kiểu lập lịch One-time, Rate-based và Cron-based, cùng những tính năng hữu ích như Retry Policy, Dead-letter Queue (DLQ), Flexible Time Window và hỗ trợ múi giờ. Bài viết cũng hướng dẫn cách sử dụng EventBridge Scheduler để tự động gọi AWS Lambda mỗi 30 phút, giúp giảm công việc quản lý máy chủ và đơn giản hóa quá trình tự động hóa trong các project trên AWS.
